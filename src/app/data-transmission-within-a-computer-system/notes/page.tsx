@@ -53,7 +53,7 @@ const Page = () => {
             <h2 className="text-2xl font-semibold mb-2">Interrupts and I/O: Handling Outside Input</h2>
             <p>How the CPU talks to things like keyboards and screens:</p>
             <ul className="list-disc pl-6 mb-4">
-                <li>When these devices need attention, they send an "interrupt" signal.</li>
+                <li>When these devices need attention, they send an &quot;interrupt&quot; signal.</li>
             </ul>
 
             <h2 className="text-2xl font-semibold mb-2">Parallelism: Teamwork for Faster Processing</h2>

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Page = () => {
+const page = () => {
     return (
         <div className="p-6 max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold mb-6 text-center">1.1 History of Computer Systems and Computer Generations
-</h1>
+            </h1>
             <h1 className="text-3xl font-bold mb-4">Early Computing Devices</h1>
 
             <section className="mb-6">
@@ -161,4 +161,4 @@ const Page = () => {
     )
 }
 
-export default Page
+export default page
