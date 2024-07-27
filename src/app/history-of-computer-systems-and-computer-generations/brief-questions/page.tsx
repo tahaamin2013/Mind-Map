@@ -202,7 +202,7 @@ const Page = () => {
                     </AccordionItem>
 
                     <AccordionItem value="item-11">
-                        <AccordionTrigger>11. Describe three key features of Charles Babbage's Analytical Engine and explain its significance in the history of computing. (3 marks)</AccordionTrigger>
+                        <AccordionTrigger>11. Describe three key features of Charles Babbage&apos;s Analytical Engine and explain its significance in the history of computing. (3 marks)</AccordionTrigger>
                         <AccordionContent>
                             <ul>
                                 <li><strong>Key features of the Analytical Engine:</strong>
