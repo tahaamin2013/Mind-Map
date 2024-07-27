@@ -13,7 +13,7 @@ const Page = () => {
             </section>
 
             <section className="mb-6">
-                <h2 className="text-2xl font-semibold mb-2">Napier's Bone (John Napier)</h2>
+                <h2 className="text-2xl font-semibold mb-2">Napier&apos;s Bone (John Napier)</h2>
                 <ul className="list-disc pl-6">
                     <li>Manually operated calculating device</li>
                     <li>Used 9 separate strips (bones) for multiplication and division</li>
@@ -31,7 +31,7 @@ const Page = () => {
 
             <section className="mb-6">
                 <h2 className="text-2xl font-semibold mb-2">Stepped Reckoner (Wilhelm Leibniz, 1673)</h2>
-                <p>Improved on Pascal's invention.</p>
+                <p>Improved on Pascal&apos;s invention.</p>
                 <ul className="list-disc pl-6">
                     <li>Digital mechanical calculator using grooved wheels</li>
                 </ul>

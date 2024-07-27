@@ -117,19 +117,19 @@ const Page = () => {
             <h2 className="text-2xl font-semibold mb-2">What is Von Neumann Architecture?</h2>
             <ul className="list-disc pl-6 mb-4">
                 <li>A design for how computers work, created by John von Neumann in 1945</li>
-                <li>It's like a recipe for building computers</li>
+                <li>It&apos;s like a recipe for building computers</li>
                 <li>Most computers today still use this design</li>
             </ul>
 
             <h2 className="text-2xl font-semibold mb-2">Main Parts of Von Neumann Architecture:</h2>
             <ul className="list-disc pl-6 mb-4">
-                <li>Central Processing Unit (CPU): The computer's brain</li>
+                <li>Central Processing Unit (CPU): The computer&apos;s brain</li>
                 <li>Memory Unit: Where the computer stores information</li>
                 <li>Input/Output: How the computer talks to the outside world</li>
                 <li>Buses: Roads that connect all the parts</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">The CPU: The Computer's Brain</h2>
+            <h2 className="text-2xl font-semibold mb-2">The CPU: The Computer&apos;s Brain</h2>
             <p>Does all the thinking and calculating. Has three important parts:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>Arithmetic and Logic Unit (ALU): Does math and logical operations</li>
@@ -146,21 +146,21 @@ const Page = () => {
                 <li>CIR (Current Instruction Register): Holds the current task</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Memory Unit: The Computer's Notebook</h2>
+            <h2 className="text-2xl font-semibold mb-2">Memory Unit: The Computer&apos;s Notebook</h2>
             <p>Stores both programs and data. Has two main types:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>RAM: Fast memory, but forgets when power is off</li>
                 <li>Cache: Super fast, but very small amount</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Buses: The Computer's Highway System</h2>
+            <h2 className="text-2xl font-semibold mb-2">Buses: The Computer&apos;s Highway System</h2>
             <ul className="list-disc pl-6 mb-4">
                 <li>Address Bus: Tells where data should go</li>
                 <li>Data Bus: Carries the actual information</li>
                 <li>Control Bus: Manages traffic and gives instructions</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Input/Output (I/O) Controller: The Computer's Messenger</h2>
+            <h2 className="text-2xl font-semibold mb-2">Input/Output (I/O) Controller: The Computer&apos;s Messenger</h2>
             <ul className="list-disc pl-6 mb-4">
                 <li>Manages how the computer talks to things like keyboards, screens, and hard drives</li>
             </ul>
@@ -173,11 +173,11 @@ const Page = () => {
                 <li>Results are stored back in memory or sent to output devices</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Why It's Important:</h2>
+            <h2 className="text-2xl font-semibold mb-2">Why It&apos;s Important:</h2>
             <ul className="list-disc pl-6 mb-4">
                 <li>This design allows for flexible programming</li>
                 <li>The same hardware can run many different programs</li>
-                <li>It's the foundation for most modern computers</li>
+                <li>It&apos;s the foundation for most modern computers</li>
             </ul>
         </div>
     )

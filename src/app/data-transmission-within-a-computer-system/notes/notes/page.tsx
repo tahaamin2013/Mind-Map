@@ -5,7 +5,7 @@ const Page = () => {
         <div className="p-6 max-w-7xl mx-auto">
             <h1 className="text-4xl font-bold mb-5">Core Components of a Computer System</h1>
             <h1 className="text-3xl font-bold mb-4">Data Transmission in a Computer</h1>
-            <p>It's how information moves between different parts of a computer. These parts include:</p>
+            <p>It&apos;s how information moves between different parts of a computer. These parts include:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>The brain (CPU)</li>
                 <li>Memory</li>
@@ -13,7 +13,7 @@ const Page = () => {
                 <li>Input/Output devices</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Bus Architecture: The Computer's Highway System</h2>
+            <h2 className="text-2xl font-semibold mb-2">Bus Architecture: The Computer&apos;s Highway System</h2>
             <p>Buses are like roads that data travels on inside the computer. There are three main types of buses:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>Data Bus: Carries the actual information</li>
@@ -21,7 +21,7 @@ const Page = () => {
                 <li>Control Bus: Manages traffic and tells components what to do</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Data Paths: The CPU's Internal Roads</h2>
+            <h2 className="text-2xl font-semibold mb-2">Data Paths: The CPU&apos;s Internal Roads</h2>
             <p>These are special routes inside the CPU for moving data. They connect different parts of the CPU, like:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>The math unit</li>
@@ -39,7 +39,7 @@ const Page = () => {
                 <li>Hard drives/SSDs: Much bigger but slowest</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mb-2">Instruction Cycle: The CPU's To-Do List</h2>
+            <h2 className="text-2xl font-semibold mb-2">Instruction Cycle: The CPU&apos;s To-Do List</h2>
             <p>A repeating process the CPU follows:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>Fetch: Get the next instruction</li>
