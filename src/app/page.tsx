@@ -23,7 +23,7 @@ const data: Section[] = [
       { href: "history-of-computer-systems-and-computer-generations/notes", text: "Notes" },
       { href: "notefds", text: "Mind Map" },
       { href: "notfdses", text: "MCQs" },
-      { href: "nofdstes", text: "Brief Questions" },
+      { href: "history-of-computer-systems-and-computer-generations/brief-questions", text: "Brief Questions" },
       { href: "nfdsotes", text: "Detailed Questions" },
     ],
   },
