@@ -24,14 +24,12 @@ const initialNodes = [
         data: { label: 'DevOps' },
         position: { x: 400, y: 100 },
     },
-    // Add more nodes as needed
 ];
 
 const initialEdges = [
     { id: 'e1-2', source: '1', target: '2' },
     { id: 'e1-3', source: '1', target: '3' },
     { id: 'e1-4', source: '1', target: '4' },
-    // Add more edges as needed
 ];
 
 function MindMap() {
