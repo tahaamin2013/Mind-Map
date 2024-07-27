@@ -71,6 +71,17 @@ const data: Section[] = [
       { href: "notes", text: "Detailed Questions" },
     ],
   },
+  {
+    id: "5",
+    title: "1.6 Types and Hierarchy of Computer Memory",
+    links: [
+      { href: "data-transmission-within-a-computer-system/notes", text: "Notes" },
+      { href: "notes", text: "Mind Map" },
+      { href: "notes", text: "MCQs" },
+      { href: "notes", text: "Brief Questions" },
+      { href: "notes", text: "Detailed Questions" },
+    ],
+  },
 ];
 
 export default function Home() {
