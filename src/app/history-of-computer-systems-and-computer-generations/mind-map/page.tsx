@@ -56,8 +56,7 @@ function MindMap() {
             >
                 <Controls />
                 <MiniMap />
-                <Background variant={'dots' as BackgroundVariant} gap={12} size={1} />
-
+                <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
             </ReactFlow>
         </div>
     );
