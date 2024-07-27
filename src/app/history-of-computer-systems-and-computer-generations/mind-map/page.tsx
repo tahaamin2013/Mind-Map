@@ -1,12 +1,5 @@
 import React from 'react';
-import ReactFlow, {
-    MiniMap,
-    Controls,
-    Background,
-    useNodesState,
-    useEdgesState,
-    BackgroundVariant
-} from 'reactflow';
+import ReactFlow, { MiniMap, Controls, Background, useNodesState, useEdgesState, BackgroundVariant } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 const initialNodes = [
