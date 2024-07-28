@@ -173,7 +173,7 @@ const Page = () => {
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
     return (
-        <div style={{ width: '100%', height: '600px' }}>
+        <div style={{ width: '100%', height: '760px' }}>
             <ReactFlow
                 nodes={nodes}
                 edges={edges}
