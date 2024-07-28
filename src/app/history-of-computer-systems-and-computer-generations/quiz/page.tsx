@@ -101,7 +101,7 @@ const Page: React.FC = () => {
     <div className='min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center p-4'>
       <div className='max-w-2xl w-full mx-auto bg-white rounded-lg shadow-xl overflow-hidden'>
         <div className='p-8'>
-          <h1 className='text-3xl font-bold text-gray-800 mb-4'>Cosmic Quiz Challenge</h1>
+          <h1 className='text-3xl font-bold text-gray-800 mb-4'>Quiz Challenge</h1>
           {!showResult ? (
             <>
               <div className='flex justify-between items-center mb-4'>
