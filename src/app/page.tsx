@@ -67,6 +67,10 @@ export default function Home() {
           <h1 className="font-bold text-lg">Unit 1S: Introduction to Computers</h1>
 
         </Link>
+        <Link href="/computers-components" className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
+          <h1 className="font-bold text-lg">Unit 2S: Computer Components</h1>
+
+        </Link>
       </div>
     </div>
   );
