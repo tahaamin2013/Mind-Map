@@ -63,7 +63,7 @@ const page: React.FC = () => {
                 <strong>Function:</strong> A program that translates assembly language into machine code.
             </p>
             <p>
-                <strong>Purpose:</strong> Assembly language is a low-level programming language specific to a computer's architecture.
+                <strong>Purpose:</strong> Assembly language is a low-level programming language specific to a computer&apos;s architecture.
             </p>
         </div>
     );
