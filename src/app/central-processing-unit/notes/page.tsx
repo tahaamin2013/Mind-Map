@@ -7,21 +7,21 @@ const page: React.FC = () => {
 
             <h2 className="text-2xl font-bold mb-2">2.1 Overview of CPU</h2>
             <p className="mb-4">
-                The Central Processing Unit, commonly known as the CPU, is often referred to as the "brain" of the computer.
-                It's the primary component responsible for executing instructions of a computer program. These instructions
+                The Central Processing Unit, commonly known as the CPU, is often referred to as the &quot;brain&quot; of the computer.
+                It&apos;s the primary component responsible for executing instructions of a computer program. These instructions
                 involve performing basic arithmetic, logical, control, and input/output (I/O) operations specified by the instructions.
             </p>
             <ul className="list-disc list-inside mb-4">
-                <li>It's typically a small silicon chip encased in a ceramic or plastic package.</li>
+                <li>It&apos;s typically a small silicon chip encased in a ceramic or plastic package.</li>
                 <li>Modern CPUs can perform billions of calculations per second.</li>
                 <li>CPUs are produced by manufacturers like Intel, AMD, and ARM.</li>
                 <li>The speed of a CPU is measured in Hertz (Hz), with modern CPUs operating in the Gigahertz (GHz) range.</li>
-                <li>The CPU consists of several key components, primarily the Control Unit (CU) and the Arithmetic Logic Unit (ALU), which we'll explore in more detail in the following sections.</li>
+                <li>The CPU consists of several key components, primarily the Control Unit (CU) and the Arithmetic Logic Unit (ALU), which we&apos;ll explore in more detail in the following sections.</li>
             </ul>
 
             <h2 className="text-2xl font-bold mb-2">2.2 Control Unit (CU)</h2>
             <p className="mb-4">
-                The Control Unit is the component of the CPU that directs the operation of the processor. It tells the computer's memory,
+                The Control Unit is the component of the CPU that directs the operation of the processor. It tells the computer&apos;s memory,
                 arithmetic and logic unit, and input and output devices how to respond to the instructions that have been sent to the processor.
             </p>
             <ul className="list-disc list-inside mb-4">
@@ -33,7 +33,7 @@ const page: React.FC = () => {
 
             <h2 className="text-2xl font-bold mb-2">2.3 Arithmetic and Logic Unit (ALU)</h2>
             <p className="mb-4">
-                The Arithmetic Logic Unit is the part of the CPU that carries out arithmetic and logical operations. It's essentially the mathematical brain of the computer.
+                The Arithmetic Logic Unit is the part of the CPU that carries out arithmetic and logical operations. It&apos;s essentially the mathematical brain of the computer.
             </p>
             <ul className="list-disc list-inside mb-4">
                 <li>Arithmetic operations: Addition, subtraction, multiplication, and division</li>
