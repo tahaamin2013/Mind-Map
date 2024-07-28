@@ -91,7 +91,7 @@ const page: React.FC = () => {
                 <h2 className="text-2xl font-semibold mt-4">Key Concepts</h2>
                 <h3 className="text-xl font-medium mt-2">Compiler</h3>
                 <p className="mb-2">
-                    <strong>Function:</strong> A program that translates an entire high-level language code into machine code all at once before execution.
+                    <strong>Function:</strong>  program that translates an entire high-level language code into machine code all at once before execution. It produces an executable file of machine code. It converts source code into machine code line by line. 
                 </p>
                 <p className="mb-4">
                     <strong>Examples:</strong> GCC compiler for C and C++.
@@ -99,7 +99,7 @@ const page: React.FC = () => {
 
                 <h3 className="text-xl font-medium mt-2">Interpreter</h3>
                 <p className="mb-2">
-                    <strong>Function:</strong> A program that translates and executes high-level language code line by line as the program runs.
+                    <strong>Function:</strong> A program that translates and executes high-level language code line by line as the program runs. It is used at testing/development stage of a program. It produces file that does not need any type of translator to run. 
                 </p>
                 <p className="mb-4">
                     <strong>Examples:</strong> Python and JavaScript often use interpreters.
