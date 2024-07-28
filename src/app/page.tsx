@@ -33,7 +33,7 @@ const data: Section[] = [
     links: [
       { href: "understanding-systems-and-their-types/notes", text: "Notes" },
       { href: "notfdses", text: "Mind Map" },
-      { href: "ndsotes", text: "MCQs" },
+      { href: "understanding-systems-and-their-types/quiz", text: "MCQs" },
       { href: "aaanotes", text: "Brief Questions" },
       { href: "notesfdsfds", text: "Detailed Questions" },
     ],
