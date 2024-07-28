@@ -1,19 +1,7 @@
 export const quiz = {
   totalQuestions: 34,
   questions: [
-    {
-      id: 1,
-      question:
-        "Which of the following best describes the role of a bus in a computer system?",
-      answers: [
-        "A) It processes data within the CPU.",
-        "B) It transfers data and control signals between various components.",
-        "C) It stores frequently used data by the CPU.",
-        "D) It improves data transmission through memory hierarchy.",
-      ],
-      correctAnswer:
-        "B) It transfers data and control signals between various components.",
-    },
+    
     {
       id: 2,
       question: "What is the primary function of the Address Bus?",
