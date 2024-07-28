@@ -171,7 +171,6 @@ export const quiz = {
         "A collection of unrelated components.",
         "A single, independent element.",
         "A group of interconnected components working together for a specific purpose.",
-        "A group of interconnected components working together for a specific purpose.",
       ],
       correctAnswer:
         "A group of interconnected components working together for a specific purpose.",

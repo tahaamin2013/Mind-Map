@@ -72,12 +72,23 @@ const data: Section[] = [
     ],
   },
   {
-    id: "5",
+    id: "6",
     title: "1.6 Types and Hierarchy of Computer Memory",
     links: [
       { href: "types-and-hierarchy-of-computer-memory/notes", text: "Notes" },
       { href: "notes", text: "Mind Map" },
-      { href: "notes", text: "MCQs" },
+      { href: "types-and-hierarchy-of-computer-memory/quiz", text: "MCQs" },
+      { href: "notes", text: "Brief Questions" },
+      { href: "notes", text: "Detailed Questions" },
+    ],
+  },
+  {
+    id: "7",
+    title: "1.7 Software and Hardware Engineering",
+    links: [
+      { href: "software-and-hardware-engineering/notes", text: "Notes" },
+      { href: "notes", text: "Mind Map" },
+      { href: "software-and-hardware-engineering/quiz", text: "MCQs" },
       { href: "notes", text: "Brief Questions" },
       { href: "notes", text: "Detailed Questions" },
     ],
