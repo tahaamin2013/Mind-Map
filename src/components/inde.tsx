@@ -32,7 +32,7 @@ const initialEdges = [
     { id: 'e1-4', source: '1', target: '4' },
 ];
 
-function MindMap() {
+function page() {
     const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
     const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
@@ -53,4 +53,5 @@ function MindMap() {
     );
 }
 
-export default MindMap;
+export default page;
+ 

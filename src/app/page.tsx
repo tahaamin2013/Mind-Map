@@ -21,7 +21,7 @@ const data: Section[] = [
     title: "1.1 History of Computer Systems and Computer Generations",
     links: [
       { href: "history-of-computer-systems-and-computer-generations/notes", text: "Notes" },
-      { href: "notefds", text: "Mind Map" },
+      { href: "history-of-computer-systems-and-computer-generations/mind-map", text: "Mind Map" },
       { href: "history-of-computer-systems-and-computer-generations/quiz", text: "MCQs" },
       { href: "history-of-computer-systems-and-computer-generations/brief-questions", text: "Brief Questions" },
       { href: "nfdsotes", text: "Detailed Questions" },
