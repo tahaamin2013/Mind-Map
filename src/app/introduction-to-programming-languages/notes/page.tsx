@@ -49,8 +49,8 @@ const page: React.FC = () => {
                     <p className=" mb-2"><strong>Description:</strong> The lowest-level programming language, consisting of binary code (1s and 0s).</p>
                     <h3 className="text-xl font-medium mb-2">Characteristics:</h3>
                     <ul className="list-disc list-inside  mb-4">
-                        <li>Directly executable by the computer's CPU</li>
-                        <li>Specific to the computer's hardware architecture</li>
+                        <li>Directly executable by the computer&apos;s CPU</li>
+                        <li>Specific to the computer&apos;s hardware architecture</li>
                         <li>Extremely difficult for humans to read or write</li>
                     </ul>
                     <h3 className="text-xl font-medium mb-2">Advantages:</h3>
