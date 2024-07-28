@@ -44,7 +44,7 @@ const data: Section[] = [
     links: [
       { href: "core-components-of-a-computer-system/notes", text: "Notes" },
       { href: "nfdsfdsafotes", text: "Mind Map" },
-      { href: "dsfsaadsafd", text: "MCQs" },
+      { href: "core-components-of-a-computer-system/quiz", text: "MCQs" },
       { href: "nofadsfadsfates", text: "Brief Questions" },
       { href: "nofdasfdstes", text: "Detailed Questions" },
     ],
@@ -55,7 +55,7 @@ const data: Section[] = [
     links: [
       { href: "von-neumann-architecture/notes", text: "Notes" },
       { href: "notes", text: "Mind Map" },
-      { href: "notes", text: "MCQs" },
+      { href: "von-neumann-architecture/quiz", text: "MCQs" },
       { href: "notes", text: "Brief Questions" },
       { href: "notes", text: "Detailed Questions" },
     ],
