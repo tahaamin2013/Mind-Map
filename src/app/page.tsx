@@ -93,6 +93,17 @@ const data: Section[] = [
       { href: "notes", text: "Detailed Questions" },
     ],
   },
+  {
+    id: "8",
+    title: "1.8 Computer Software Multiple",
+    links: [
+      { href: "computer-software-multiple/notes", text: "Notes" },
+      { href: "notes", text: "Mind Map" },
+      { href: "computer-software-multiple/quiz", text: "MCQs" },
+      { href: "notes", text: "Brief Questions" },
+      { href: "notes", text: "Detailed Questions" },
+    ],
+  },
 ];
 
 export default function Home() {
