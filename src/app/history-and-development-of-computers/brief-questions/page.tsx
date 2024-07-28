@@ -18,7 +18,7 @@ const faqs = [
         )
     },
     {
-        question: "Explain Wilhelm Schickard's contribution to the development of calculators.",
+        question: "Explain Wilhelm Schickard&apos;s contribution to the development of calculators.",
         answer: (
             <ul className="list-disc list-inside">
                 <li>Creating the first mechanical calculator in 1622.</li>
@@ -38,7 +38,7 @@ const faqs = [
         )
     },
     {
-        question: "Describe the key features of Gottfried Wilhelm Leibniz's Stepped Reckoner.",
+        question: "Describe the key features of Gottfried Wilhelm Leibniz&apos;s Stepped Reckoner.",
         answer: (
             <ul className="list-disc list-inside">
                 <li>Could perform all four basic arithmetic operations: addition, subtraction, multiplication, and division.</li>
@@ -48,17 +48,17 @@ const faqs = [
         )
     },
     {
-        question: "Why is Charles Babbage's Analytical Engine considered the first general-purpose computer?",
+        question: "Why is Charles Babbage&apos;s Analytical Engine considered the first general-purpose computer?",
         answer: (
             <ul className="list-disc list-inside">
                 <li>It was designed to be programmable, capable of performing various types of calculations.</li>
                 <li>It incorporated concepts like looping and conditional branching, essential features of modern computing.</li>
-                <li>It separated memory (the 'store') from processing (the 'mill'), similar to the architecture of modern computers.</li>
+                <li>It separated memory (the &apos;store&apos;) from processing (the &apos;mill&apos;), similar to the architecture of modern computers.</li>
             </ul>
         )
     },
     {
-        question: "Explain the importance of Alan Turing's concept of a universal machine in computer science.",
+        question: "Explain the importance of Alan Turing&apos;s concept of a universal machine in computer science.",
         answer: (
             <ul className="list-disc list-inside">
                 <li>It provided a theoretical foundation for the idea of a general-purpose computer.</li>
@@ -174,7 +174,7 @@ const faqs = [
         question: "Explain the importance of the first microprocessor in computer history.",
         answer: (
             <ul className="list-disc list-inside">
-                <li>It integrated the computer's CPU onto a single chip.</li>
+                <li>It integrated the computer&apos;s CPU onto a single chip.</li>
                 <li>It paved the way for personal computers and embedded systems.</li>
                 <li>It significantly reduced the cost and size of computers.</li>
             </ul>
@@ -186,7 +186,7 @@ const faqs = [
             <ul className="list-disc list-inside">
                 <li>It was one of the first personal computers available to the public.</li>
                 <li>It used the Intel 8080 microprocessor.</li>
-                <li>It inspired the creation of software for personal use, including Microsoft's first product.</li>
+                <li>It inspired the creation of software for personal use, including Microsoft&apos;s first product.</li>
             </ul>
         )
     },
@@ -201,10 +201,10 @@ const faqs = [
         )
     },
     {
-        question: "Explain the impact of IBM's first PC on the computer industry.",
+        question: "Explain the impact of IBM&apos;s first PC on the computer industry.",
         answer: (
             <ul className="list-disc list-inside">
-                <li>Setting a standard for personal computers, leading to the 'IBM PC compatible' market.</li>
+                <li>Setting a standard for personal computers, leading to the &apos;IBM PC compatible&apos; market.</li>
                 <li>Using an open architecture that allowed other companies to produce compatible hardware and software.</li>
                 <li>Legitimizing the personal computer market for business use.</li>
             </ul>
