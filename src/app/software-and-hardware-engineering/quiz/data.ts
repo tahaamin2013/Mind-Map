@@ -1,4 +1,4 @@
-const quiz = {
+export const quiz = {
   totalQuestions: 36,
   questions: [
     {

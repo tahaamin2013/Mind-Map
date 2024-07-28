@@ -1,7 +1,6 @@
 export const quiz = {
   totalQuestions: 34,
   questions: [
-    
     {
       id: 2,
       question: "What is the primary function of the Address Bus?",
