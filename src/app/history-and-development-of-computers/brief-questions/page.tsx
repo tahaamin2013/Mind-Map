@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
     Accordion,
     AccordionContent,
@@ -367,7 +367,7 @@ const faqs = [
         answer: (
             <ul className="list-disc list-inside">
                 <li>Mechanical calculators like the abacus and Pascaline used physical mechanisms for computation.</li>
-                <li>Charles Babbage's Analytical Engine (1830s) introduced programmability to mechanical computation.</li>
+                <li>Charles Babbage`&apos;s Analytical Engine (1830s) introduced programmability to mechanical computation.</li>
                 <li>Early electronic computers like the ABC and ENIAC used vacuum tubes for faster, more complex calculations.</li>
                 <li>This progression dramatically increased calculation speed and complexity of operations possible.</li>
             </ul>
@@ -390,7 +390,7 @@ const faqs = [
             <ul className="list-disc list-inside">
                 <li>Alan Turing introduced the concept of a universal machine in 1936, laying theoretical foundations for computer science.</li>
                 <li>He played a crucial role in breaking the Enigma code during World War II, advancing computing techniques.</li>
-                <li>Turing's work on artificial intelligence, including the Turing Test, influenced the field's development.</li>
+                <li>Turing`&apos;s work on artificial intelligence, including the Turing Test, influenced the field`&apos;s development.</li>
             </ul>
         ),
     },
@@ -408,7 +408,7 @@ const faqs = [
         question: "How did the Analytical Engine differ from previous calculating devices?",
         answer: (
             <ul className="list-disc list-inside">
-                <li>Charles Babbage's Analytical Engine (1830s) was designed to be programmable, unlike previous fixed-function calculators.</li>
+                <li>Charles Babbage`&apos;s Analytical Engine (1830s) was designed to be programmable, unlike previous fixed-function calculators.</li>
                 <li>It introduced concepts like looping and conditional branching, fundamental to modern programming.</li>
                 <li>The Analytical Engine separated memory (the "store") from processing (the "mill"), similar to modern computer architecture.</li>
             </ul>
@@ -443,7 +443,7 @@ const faqs = [
                 <li>The IBM PC, released in 1981, set a standard for personal computer hardware and software.</li>
                 <li>Its open architecture allowed other companies to produce compatible hardware and software.</li>
                 <li>This led to the "IBM PC compatible" market, creating a standard platform for software development.</li>
-                <li>The IBM PC's success established the dominance of the x86 processor architecture and MS-DOS operating system.</li>
+                <li>The IBM PC`&apos;s success established the dominance of the x86 processor architecture and MS-DOS operating system.</li>
             </ul>
         ),
     },
@@ -521,7 +521,7 @@ const faqs = [
         answer: (
             <ul className="list-disc list-inside">
                 <li>Quantum computing could solve certain problems much faster than classical computers, impacting fields like cryptography and complex modeling.</li>
-                <li>Neuromorphic computing could revolutionize AI and machine learning by mimicking the human brain's structure and function.</li>
+                <li>Neuromorphic computing could revolutionize AI and machine learning by mimicking the human brain`&apos;s structure and function.</li>
                 <li>Both technologies have the potential to significantly advance computational capabilities and change how we approach complex problems.</li>
             </ul>
         ),
