@@ -1,5 +1,5 @@
 export const quiz = {
-  totalQuestions: 55,
+  totalQuestions: 55    ,
   questions: [
     {
       id: 1,

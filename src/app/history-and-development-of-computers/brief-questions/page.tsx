@@ -210,6 +210,322 @@ const faqs = [
             </ul>
         )
     },
+    {
+        question: "What characterizes fourth-generation computers?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The use of microprocessors, which integrate the entire CPU onto a single chip.</li>
+                <li>Very Large Scale Integration (VLSI) technology, allowing millions of transistors on a single chip.</li>
+                <li>Significant increases in speed and decreases in size compared to previous generations.</li>
+                <li>The rise of personal computers and graphical user interfaces.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the concept of artificial intelligence in the context of fifth-generation computing.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Developing computers that can learn and reason in ways similar to humans.</li>
+                <li>Focusing on natural language processing and machine learning capabilities.</li>
+                <li>Aiming to create systems that can solve complex problems and make decisions autonomously.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "What is parallel processing, and why is it significant in computer development?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The simultaneous use of multiple processors or cores to solve a computational problem.</li>
+                <li>Significant because it allows for faster processing of complex tasks.</li>
+                <li>Enables more efficient handling of large-scale computations and data processing.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the importance of computer networks in the 1980s.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Allowed for the sharing of resources and information between multiple computers.</li>
+                <li>Laid the groundwork for the development of the internet.</li>
+                <li>Enabled new forms of communication and collaboration in business and academia.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Who proposed the World Wide Web, and when?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Proposed by Tim Berners-Lee in 1989.</li>
+                <li>Developed while he was working at CERN (European Organization for Nuclear Research).</li>
+                <li>Designed to be a global hypertext system for sharing information.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the impact of the World Wide Web on information sharing.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Creating a user-friendly interface for accessing information on the internet.</li>
+                <li>Enabling easy publication and access to a wide variety of content globally.</li>
+                <li>Revolutionizing how people communicate, conduct business, and access knowledge.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How did the widespread accessibility of the internet in the 1990s transform computing?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Making global information access a reality for many individuals and businesses.</li>
+                <li>Spurring the development of new technologies and services, like e-commerce and social media.</li>
+                <li>Changing how people communicate, work, and interact with technology on a daily basis.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "What is quantum computing, and how might it revolutionize computational capabilities?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Uses quantum-mechanical phenomena like superposition and entanglement to perform computations.</li>
+                <li>Has the potential to solve certain complex problems much faster than classical computers.</li>
+                <li>Could revolutionize fields like cryptography, drug discovery, and complex system modeling.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the concept of neuromorphic computing.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Involves designing computer architectures inspired by the human brain.</li>
+                <li>Aims to mimic the neural structure and function of biological nervous systems.</li>
+                <li>Has potential applications in artificial intelligence and machine learning tasks.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "What is edge computing, and why is it considered an emerging trend?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Brings computation and data storage closer to the location where it is needed.</li>
+                <li>Reduces latency and bandwidth use by processing data near its source.</li>
+                <li>Is emerging as a solution for Internet of Things (IoT) devices and real-time applications.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Compare and contrast the Pascaline and the Stepped Reckoner.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The Pascaline (1642) and Stepped Reckoner (1670s) were both early mechanical calculators.</li>
+                <li>The Pascaline could perform addition and subtraction directly, while the Stepped Reckoner could also do multiplication and division.</li>
+                <li>The Stepped Reckoner used a more advanced stepped gear mechanism, allowing for more complex calculations.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the transition from vacuum tubes to transistors in computer technology.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Vacuum tubes were used in first-generation computers (1940s-1950s).</li>
+                <li>Transistors, invented in 1947, began replacing vacuum tubes in the 1950s.</li>
+                <li>This transition led to smaller, more reliable, and more energy-efficient computers.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How did the development of the microprocessor influence personal computing?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The microprocessor, first created by Intel in 1971, integrated the CPU onto a single chip.</li>
+                <li>It dramatically reduced the size and cost of computers, making personal computers feasible.</li>
+                <li>This led to the development of home computers and eventually to ubiquitous computing devices.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the evolution of computers from the ENIAC to the IBM PC.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>ENIAC (1946) was room-sized, used vacuum tubes, and was programmed by rewiring.</li>
+                <li>Transistors replaced vacuum tubes in the 1950s, reducing size and improving reliability.</li>
+                <li>Integrated circuits in the 1960s further miniaturized computers.</li>
+                <li>The microprocessor (1971) enabled the creation of personal computers like the IBM PC (1981).</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Compare the key features of first-generation and fourth-generation computers.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>First-generation: Used vacuum tubes, were large, generated a lot of heat, and had limited memory.</li>
+                <li>Fourth-generation: Use microprocessors, are much smaller, more efficient, and have vastly more memory and processing power.</li>
+                <li>First-generation required specialized programming, while fourth-generation use high-level languages and graphical interfaces.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the progression from mechanical calculators to electronic computers.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Mechanical calculators like the abacus and Pascaline used physical mechanisms for computation.</li>
+                <li>Charles Babbage's Analytical Engine (1830s) introduced programmability to mechanical computation.</li>
+                <li>Early electronic computers like the ABC and ENIAC used vacuum tubes for faster, more complex calculations.</li>
+                <li>This progression dramatically increased calculation speed and complexity of operations possible.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How did the invention of integrated circuits impact computer size and performance?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Integrated circuits, developed in the 1960s, combined multiple transistors on a single chip.</li>
+                <li>This allowed for significant miniaturization of computer components.</li>
+                <li>It increased processing speed and efficiency while reducing power consumption.</li>
+                <li>Integrated circuits paved the way for smaller, more powerful computers and eventual personal computing.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the role of Alan Turing in the development of computer science.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Alan Turing introduced the concept of a universal machine in 1936, laying theoretical foundations for computer science.</li>
+                <li>He played a crucial role in breaking the Enigma code during World War II, advancing computing techniques.</li>
+                <li>Turing's work on artificial intelligence, including the Turing Test, influenced the field's development.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the significance of the Z3 in the context of programmable computers.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The Z3, completed by Konrad Zuse in 1941, is considered one of the first fully functional programmable computers.</li>
+                <li>It was the first computer that was fully automatic, programmable, and could work with binary code.</li>
+                <li>The Z3 demonstrated the feasibility of using machines for complex calculations, influencing future computer designs.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How did the Analytical Engine differ from previous calculating devices?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Charles Babbage's Analytical Engine (1830s) was designed to be programmable, unlike previous fixed-function calculators.</li>
+                <li>It introduced concepts like looping and conditional branching, fundamental to modern programming.</li>
+                <li>The Analytical Engine separated memory (the "store") from processing (the "mill"), similar to modern computer architecture.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the impact of transistors on computer reliability and efficiency.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Transistors, introduced in the 1950s, replaced vacuum tubes in computers.</li>
+                <li>They improved reliability by being more durable and less prone to failure than vacuum tubes.</li>
+                <li>Transistors increased efficiency by consuming less power and generating less heat.</li>
+                <li>This allowed for the creation of smaller, faster, and more complex computer systems.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the importance of the Apple II in the context of personal computing.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The Apple II, introduced in 1977, was one of the first successful mass-produced microcomputers.</li>
+                <li>It featured a user-friendly design with color graphics and an easy-to-use interface.</li>
+                <li>The Apple II popularized personal computers for home and small business use.</li>
+                <li>It spurred the development of software for personal use, including VisiCalc, the first spreadsheet program.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How did the IBM PC influence the standardization of personal computers?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The IBM PC, released in 1981, set a standard for personal computer hardware and software.</li>
+                <li>Its open architecture allowed other companies to produce compatible hardware and software.</li>
+                <li>This led to the "IBM PC compatible" market, creating a standard platform for software development.</li>
+                <li>The IBM PC's success established the dominance of the x86 processor architecture and MS-DOS operating system.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the evolution of data storage from early computers to modern systems.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Early computers used punch cards and paper tape for data storage.</li>
+                <li>Magnetic tape was introduced in the 1950s, offering larger capacity and reusability.</li>
+                <li>Hard disk drives, developed in the 1950s, became common in the 1980s, providing faster access and larger capacities.</li>
+                <li>Solid-state drives (SSDs) emerged in the 2000s, offering even faster access and greater reliability.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the concept of generations in computer development.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Computer generations are defined by major technological advancements in computer hardware.</li>
+                <li>First generation (1940s-1950s): Vacuum tubes</li>
+                <li>Second generation (1950s-1960s): Transistors</li>
+                <li>Third generation (1960s-1970s): Integrated circuits</li>
+                <li>Fourth generation (1970s-present): Microprocessors</li>
+                <li>Each generation brought increases in speed, decreases in size, and improved reliability.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How did the internet change the way computers were used and perceived?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>The internet transformed computers from standalone devices to interconnected tools.</li>
+                <li>It enabled global information sharing and communication on an unprecedented scale.</li>
+                <li>The internet changed computers into platforms for e-commerce, social networking, and online services.</li>
+                <li>It led to the development of cloud computing and the concept of always-on connectivity.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the progression of computing power from the abacus to modern supercomputers.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Abacus: Manual calculation tool used for over 2000 years.</li>
+                <li>Mechanical calculators (17th-19th centuries): Automated basic arithmetic operations.</li>
+                <li>Early electronic computers (1940s-1950s): Performed thousands of calculations per second.</li>
+                <li>Modern supercomputers: Capable of quintillions of calculations per second.</li>
+                <li>This progression represents a massive increase in speed, accuracy, and complexity of computations.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Explain the role of World War II in accelerating computer development.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>World War II created urgent need for complex calculations (e.g., ballistics, code-breaking).</li>
+                <li>It led to increased funding and resources for computer research and development.</li>
+                <li>The war effort produced advances like the Colossus (for code-breaking) and ENIAC.</li>
+                <li>Post-war, these technologies transitioned to civilian use, spurring further development.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "How has the focus of computer development shifted from hardware to software over time?",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Early computer development focused primarily on hardware due to physical limitations.</li>
+                <li>As hardware became more capable, software development gained importance.</li>
+                <li>The rise of personal computing in the 1980s led to a boom in software development.</li>
+                <li>Modern computing often emphasizes software and user experience, with cloud computing further shifting focus from individual hardware.</li>
+            </ul>
+        ),
+    },
+    {
+        question: "Describe the potential impact of quantum and neuromorphic computing on future technology.",
+        answer: (
+            <ul className="list-disc list-inside">
+                <li>Quantum computing could solve certain problems much faster than classical computers, impacting fields like cryptography and complex modeling.</li>
+                <li>Neuromorphic computing could revolutionize AI and machine learning by mimicking the human brain's structure and function.</li>
+                <li>Both technologies have the potential to significantly advance computational capabilities and change how we approach complex problems.</li>
+            </ul>
+        ),
+    },
 ];
 
 const Page = () => {
