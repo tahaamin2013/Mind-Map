@@ -442,7 +442,7 @@ const faqs = [
             <ul className="list-disc list-inside">
                 <li>The IBM PC, released in 1981, set a standard for personal computer hardware and software.</li>
                 <li>Its open architecture allowed other companies to produce compatible hardware and software.</li>
-                <li>This led to the "IBM PC compatible" market, creating a standard platform for software development.</li>
+                <li>This led to the &quot;IBM PC compatible&quot; market, creating a standard platform for software development.</li>
                 <li>The IBM PC`&apos;s success established the dominance of the x86 processor architecture and MS-DOS operating system.</li>
             </ul>
         ),
