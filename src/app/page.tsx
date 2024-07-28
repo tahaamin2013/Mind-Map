@@ -66,7 +66,7 @@ const data: Section[] = [
     links: [
       { href: "data-transmission-within-a-computer-system/notes", text: "Notes" },
       { href: "notes", text: "Mind Map" },
-      { href: "notes", text: "MCQs" },
+      { href: "data-transmission-within-a-computer-system/quiz", text: "MCQs" },
       { href: "notes", text: "Brief Questions" },
       { href: "notes", text: "Detailed Questions" },
     ],
