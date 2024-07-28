@@ -410,7 +410,7 @@ const faqs = [
             <ul className="list-disc list-inside">
                 <li>Charles Babbage`&apos;s Analytical Engine (1830s) was designed to be programmable, unlike previous fixed-function calculators.</li>
                 <li>It introduced concepts like looping and conditional branching, fundamental to modern programming.</li>
-                <li>The Analytical Engine separated memory (the "store") from processing (the "mill"), similar to modern computer architecture.</li>
+                <li>The Analytical Engine separated memory (the &quot;store&quot;) from processing (the &quot;mill&quot;), similar to modern computer architecture.</li>
             </ul>
         ),
     },
