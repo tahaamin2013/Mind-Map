@@ -39,7 +39,7 @@ const page = () => {
                         <h3 className="text-xl font-medium">Stepped Reckoner or Leibniz Wheel</h3>
                         <ul className="list-disc ml-6 space-y-2">
                             <li>Created in 1673 by German mathematician Wilhelm Leibniz.</li>
-                            <li>Improved on Pascal's invention.</li>
+                            <li>Improved on Pascal&apos;s invention.</li>
                             <li>A digital mechanical calculator using grooved wheels.</li>
                         </ul>
                     </div>
@@ -65,7 +65,7 @@ const page = () => {
                             <li>Invented by Herman Hollerith in 1890.</li>
                             <li>Punch card-based mechanical calculator.</li>
                             <li>Used for computing statistics and recording data.</li>
-                            <li>Hollerith's company eventually became IBM in 1924.</li>
+                            <li>Hollerith&apos;s company eventually became IBM in 1924.</li>
                         </ul>
                     </div>
                     <div>
@@ -125,7 +125,7 @@ const page = () => {
                             <li>Improved energy efficiency, size reduction, and reliability.</li>
                             <li>Interaction via keyboard and monitor.</li>
                             <li>Capability to run multiple application programs concurrently.</li>
-                            <li>Examples: IBM System/360, Control Data Corporation's 3300 and 6600.</li>
+                            <li>Examples: IBM System/360, Control Data Corporation&apos;s 3300 and 6600.</li>
                         </ul>
                     </div>
                     <div>
@@ -139,7 +139,7 @@ const page = () => {
                             <li>Operating systems with Graphical User Interfaces (GUIs).</li>
                             <li>Support for multimedia software and modern programming languages.</li>
                             <li>Compatibility with portable and wireless input/output devices.</li>
-                            <li>Examples: Intel Pentium series, IBM ThinkPad series, HP Pavilion series, Dell Inspiron series, Apple's MacBook Pro and MacBook Air.</li>
+                            <li>Examples: Intel Pentium series, IBM ThinkPad series, HP Pavilion series, Dell Inspiron series, Apple&apos;s MacBook Pro and MacBook Air.</li>
                         </ul>
                     </div>
                     <div>
