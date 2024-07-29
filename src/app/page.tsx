@@ -1,5 +1,7 @@
 "use client";
 import MyMindMap from "@/components/MyMindMap";
+import ReactFlowPage from "@/components/reactflow";
+import Flow from "@/components/reactflow.js";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -51,11 +53,13 @@ const data: Section[] = [
     link: "/unit",
     title: "Unit 7: Entrepreneurship",
   },
+
 ];
 
 export default function Home() {
   return (
     <div className="p-6">
+      {/* <ReactFlowPage /> */}
       <h1 className="font-bold text-3xl">Units</h1>
       <div className="flex gap-6 flex-wrap mt-3">
         {data.map((section) => (
@@ -69,6 +73,16 @@ export default function Home() {
         </Link>
         <Link href="/computers-components" className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
           <h1 className="font-bold text-lg">Unit 2S: Computer Components</h1>
+
+        </Link>
+        <Link href="/input-and-output-devices" className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
+          <h1 className="font-bold text-lg">Unit 3S: Input/Output Devices
+          </h1>
+
+        </Link>
+        <Link href="/storage-devices" className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
+          <h1 className="font-bold text-lg">Unit 4S: Storage devices
+          </h1>
 
         </Link>
       </div>
