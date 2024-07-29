@@ -76,7 +76,7 @@ const data: Section[] = [
 export default function page() {
     return (
         <div className="p-3">
-            <h1 className="font-bold text-3xl">Unit 1S: Introduction to Computers</h1>
+            <h1 className="font-bold text-3xl">Unit 2S: Computer Components</h1>
             <div className="flex gap-6 flex-wrap mt-3">
                 {data.map((section) => (
                     <div key={section.id} className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
