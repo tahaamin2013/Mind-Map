@@ -2,183 +2,90 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div className="p-6 max-w-7xl mx-auto">
-            <h1 className="text-4xl font-bold mb-6">Core Components of a Computer System</h1>
-            <h1 className="text-3xl font-bold mb-4">1. Input Devices</h1>
-            <p>Devices used to provide data into the computer system:</p>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Keyboard</li>
-                <li>Mouse</li>
-                <li>Microphone</li>
-                <li>Scanner</li>
-                <li>Barcode Reader</li>
-                <li>Digital Camera</li>
-                <li>Touch Screen</li>
-            </ul>
+        <div className="p-6 bg-white text-gray-900">
+            <h1 className="text-3xl font-bold mb-6">1.3 Core Components of a Computer System</h1>
 
-            <h1 className="text-3xl font-bold mt-6 mb-4">2. System Unit</h1>
-            <p>Main part of the computer, including:</p>
+            <section className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4">1.3.1 Input Devices</h2>
+                <p>Input devices are used to provide data to the computer system, enabling interaction between the user and the machine. Common input devices include:</p>
+                <ul className="list-disc ml-6 space-y-2">
+                    <li><strong>Keyboard:</strong> The primary device for text entry, allowing users to input letters, numbers, and symbols.</li>
+                    <li><strong>Mouse:</strong> A hand-held device used to control the cursor and interact with the computer interface. It typically features buttons for selection and navigation.</li>
+                    <li><strong>Microphone:</strong> Captures audio input, converting sound waves into electrical signals for processing by the computer.</li>
+                    <li><strong>Scanner:</strong> Captures images from physical documents and converts them into digital formats for storage, editing, or display.</li>
+                    <li><strong>Barcode Reader:</strong> Reads barcodes printed on products to retrieve product information such as code, description, and price, useful in retail environments.</li>
+                    <li><strong>Digital Camera:</strong> Captures images in digital format, which can be transferred to a computer for editing or storage.</li>
+                    <li><strong>Touch Screen:</strong> A display that responds to touch inputs, allowing users to interact directly with what is displayed on the screen. Common in mobile devices and tablets.</li>
+                </ul>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-2">2.1 Motherboard</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Main circuit board</li>
-                <li>Contains microprocessor, memory, expansion cards, and other components</li>
-                <li>Has buses for information transmission</li>
-                <li>Connects all input/output devices</li>
-            </ul>
+            <section className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4">1.3.2 System Unit</h2>
+                <p>The system unit is the central component of a computer, housing essential hardware elements. It includes:</p>
+                <ul className="list-disc ml-6 space-y-2">
+                    <li><strong>Motherboard:</strong> The main circuit board, containing the microprocessor, main memory, expansion cards, and connectors. It facilitates communication between various components.</li>
+                    <li><strong>Expansion Slots:</strong> Slots on the motherboard for adding expansion cards.</li>
+                    <li><strong>RAM Memory Slots:</strong> Slots for installing RAM.</li>
+                    <li><strong>Socket for Microprocessor:</strong> Holds the CPU.</li>
+                    <li><strong>Ports:</strong> For connecting input and output devices.</li>
+                    <li><strong>Microprocessor (CPU):</strong> The central processing unit, responsible for executing instructions. It contains:
+                        <ul className="list-disc ml-6 space-y-2">
+                            <li><strong>Control Unit (CU):</strong> Directs operations within the CPU.</li>
+                            <li><strong>Arithmetic Logic Unit (ALU):</strong> Performs arithmetic and logical operations.</li>
+                            <li><strong>Registers:</strong> Small storage locations for temporary data.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-2">2.2 Microprocessor (CPU)</h2>
-            <p>Main chip controlling all computer activities</p>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Control Unit (CU)</li>
-                <li>Arithmetic Logic Unit (ALU)</li>
-                <li>Registers</li>
-            </ul>
+            <section className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4">1.3.3 Storage Devices</h2>
+                <p>Storage devices are used to save data and programs for long-term use. They include:</p>
+                <ul className="list-disc ml-6 space-y-2">
+                    <li><strong>Hard Disk:</strong> A magnetic storage device with a high storage capacity, used for permanent data storage.</li>
+                    <li><strong>Compact Disk (CD):</strong> An optical storage medium with a capacity of about 700 MB, used for storing data, music, and software.</li>
+                    <li><strong>Digital Versatile Disk (DVD):</strong> Similar in size to a CD but with greater storage capacity (4 to 16 GB), used for storing larger files and multimedia.</li>
+                    <li><strong>Memory Card:</strong> A small, portable storage device with capacities ranging from a few GBs, used in laptops, cameras, and mobile devices.</li>
+                    <li><strong>USB Flash Drive:</strong> A small, portable storage device connected via USB, with capacities up to 128 GB, used for transferring and storing data.</li>
+                </ul>
+            </section>
 
-            <h1 className="text-3xl font-bold mt-6 mb-4">3. Storage Devices</h1>
-            <p>Used to store programs and data not currently in use:</p>
+            <section className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4">1.3.4 Output Devices</h2>
+                <p>Output devices display or produce information from the computer. They include:</p>
+                <ul className="list-disc ml-6 space-y-2">
+                    <li><strong>Monitor:</strong> Displays visual output. Types include:
+                        <ul className="list-disc ml-6 space-y-2">
+                            <li><strong>CRT Monitor:</strong> Older technology, now largely obsolete.</li>
+                            <li><strong>LED Monitor:</strong> Slim, energy-efficient, and offers better display quality.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Printer:</strong> Produces hard copies of text and images. Types include:
+                        <ul className="list-disc ml-6 space-y-2">
+                            <li><strong>Impact Printer:</strong> Uses mechanical impact to print, e.g., dot matrix printers. Known for noise and lower print quality.</li>
+                            <li><strong>Non-Impact Printer:</strong> Includes inkjet and laser printers. Inkjet printers use ink cartridges, while laser printers use toner and are faster with higher print quality.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Plotter:</strong> Used for printing large-format graphics such as architectural blueprints and maps. Includes ink plotters and pen plotters.</li>
+                    <li><strong>Speaker:</strong> Produces audio output, commonly used for multimedia applications and sound playback.</li>
+                </ul>
+            </section>
 
-            <h2 className="text-2xl font-semibold mb-2">3.1 Internal Storage</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Hard Disk: Fixed inside the system unit, high capacity (hundreds of GB)</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">3.2 Portable Storage</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Compact Disk (CD): 700 MB capacity</li>
-                <li>Digital Versatile Disk (DVD): 4-16 GB capacity</li>
-                <li>Memory Card: Few GB capacity, used in laptops and portable devices</li>
-                <li>USB Flash Drive: Up to 128 GB capacity, connects via USB port</li>
-            </ul>
-
-            <h1 className="text-3xl font-bold mt-6 mb-4">4. Output Devices</h1>
-            <p>Used to display or print information:</p>
-
-            <h2 className="text-2xl font-semibold mb-2">4.1 Monitor</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>CRT (Cathode Ray Tube) - obsolete</li>
-                <li>LED (Light Emitting Diode) - modern, slim, energy-efficient</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">4.2 Printer</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Impact Printers
-                    <ul className="list-disc pl-6">
-                        <li>Dot Matrix Printer</li>
-                    </ul>
-                </li>
-                <li>Non-Impact Printers
-                    <ul className="list-disc pl-6">
-                        <li>Inkjet Printer</li>
-                        <li>Laser Printer</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">4.3 Plotter</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Used for large-scale printing (engineering drawings, maps, etc.)</li>
-                <li>Types: Ink plotter, Pen plotter</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">4.4 Speaker</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Produces audio output</li>
-                <li>Connected to sound card on motherboard</li>
-            </ul>
-
-            <h1 className="text-3xl font-bold mt-6 mb-4">5. Ports and Expansion Slots</h1>
-
-            <h2 className="text-2xl font-semibold mb-2">5.1 Ports</h2>
-            <p>Interfaces for connecting devices to the system unit:</p>
-            <ul className="list-disc pl-6 mb-4">
-                <li>USB (Universal Serial Bus)</li>
-                <li>HDMI (High Definition Multimedia Interface)</li>
-                <li>DVI (Digital Visual Interface)</li>
-                <li>Audio ports</li>
-                <li>LAN (Local Area Network) port</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">5.2 Expansion Slots and Cards</h2>
-            <p>Slots on motherboard for installing expansion cards</p>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Common expansion cards:
-                    <ul className="list-disc pl-6">
-                        <li>Sound card</li>
-                        <li>Graphics card</li>
-                        <li>Modem card</li>
-                        <li>Network card</li>
-                    </ul>
-                </li>
-                <li>Note: In modern computers, many expansion card functions are built into the motherboard.</li>
-            </ul>
-
-            <h1 className="text-3xl font-bold mt-6 mb-4">Von Neumann Architecture: The Blueprint of Modern Computers</h1>
-            <h2 className="text-2xl font-semibold mb-2">What is Von Neumann Architecture?</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>A design for how computers work, created by John von Neumann in 1945</li>
-                <li>It&apos;s like a recipe for building computers</li>
-                <li>Most computers today still use this design</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">Main Parts of Von Neumann Architecture:</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Central Processing Unit (CPU): The computer&apos;s brain</li>
-                <li>Memory Unit: Where the computer stores information</li>
-                <li>Input/Output: How the computer talks to the outside world</li>
-                <li>Buses: Roads that connect all the parts</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">The CPU: The Computer&apos;s Brain</h2>
-            <p>Does all the thinking and calculating. Has three important parts:</p>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Arithmetic and Logic Unit (ALU): Does math and logical operations</li>
-                <li>Control Unit (CU): Manages everything, like a boss</li>
-                <li>Registers: Tiny, super-fast storage spaces</li>
-            </ul>
-
-            <h3 className="text-xl font-semibold mb-2">Important Registers:</h3>
-            <ul className="list-disc pl-6 mb-4">
-                <li>MAR (Memory Address Register): Remembers where to find data</li>
-                <li>MDR (Memory Data Register): Holds data being moved around</li>
-                <li>AC (Accumulator): Stores results from calculations</li>
-                <li>PC (Program Counter): Keeps track of what to do next</li>
-                <li>CIR (Current Instruction Register): Holds the current task</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">Memory Unit: The Computer&apos;s Notebook</h2>
-            <p>Stores both programs and data. Has two main types:</p>
-            <ul className="list-disc pl-6 mb-4">
-                <li>RAM: Fast memory, but forgets when power is off</li>
-                <li>Cache: Super fast, but very small amount</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">Buses: The Computer&apos;s Highway System</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Address Bus: Tells where data should go</li>
-                <li>Data Bus: Carries the actual information</li>
-                <li>Control Bus: Manages traffic and gives instructions</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">Input/Output (I/O) Controller: The Computer&apos;s Messenger</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Manages how the computer talks to things like keyboards, screens, and hard drives</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">How It All Works Together:</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>Programs and data are stored in memory</li>
-                <li>The CPU fetches instructions from memory</li>
-                <li>The CPU processes these instructions</li>
-                <li>Results are stored back in memory or sent to output devices</li>
-            </ul>
-
-            <h2 className="text-2xl font-semibold mb-2">Why It&apos;s Important:</h2>
-            <ul className="list-disc pl-6 mb-4">
-                <li>This design allows for flexible programming</li>
-                <li>The same hardware can run many different programs</li>
-                <li>It&apos;s the foundation for most modern computers</li>
-            </ul>
+            <section>
+                <h2 className="text-2xl font-semibold mb-4">1.3.5 Ports, Expansion Slots, and Expansion Cards</h2>
+                <p>Ports, expansion slots, and expansion cards enhance the functionality of a computer system:</p>
+                <ul className="list-disc ml-6 space-y-2">
+                    <li><strong>Ports:</strong> Interfaces on the motherboard for connecting external devices such as keyboards, mice, monitors, and USB drives. Common types include USB, HDMI, DVI, Audio, and LAN ports.</li>
+                    <li><strong>Expansion Slots and Expansion Cards:</strong> Slots on the motherboard for adding expansion cards to enhance functionality. Common cards include:
+                        <ul className="list-disc ml-6 space-y-2">
+                            <li><strong>Sound Card:</strong> Enhances audio capabilities.</li>
+                            <li><strong>Graphics Card:</strong> Improves visual performance.</li>
+                            <li><strong>Modem Card:</strong> Facilitates internet connectivity.</li>
+                            <li><strong>Network Card:</strong> Enables network connections.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
         </div>
     )
 }

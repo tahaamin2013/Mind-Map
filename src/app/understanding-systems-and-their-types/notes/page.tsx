@@ -2,116 +2,110 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div className="p-6 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold mb-6">1.2 Understanding Systems and Their Types</h1>
-      <h1 className="text-3xl font-bold mb-4">Definition of a System</h1>
-      <p>A collection of interconnected or interrelated components working together for a specific purpose or function.</p>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Accepts input and produces output.</li>
-        <li>Found in various aspects of life (natural and artificial).</li>
-      </ul>
+    <div className="p-6 bg-white">
+      <h1 className="text-3xl font-bold mb-6">1.2 Understanding Systems and Their Types</h1>
 
-      <h1 className="text-3xl font-bold mt-6 mb-4">Importance of Understanding Systems</h1>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Relevant to fields like engineering, biology, sociology, and management.</li>
-        <li>Allows for better analysis, design, and optimization.</li>
-        <li>Different types of systems require different approaches for study and management.</li>
-      </ul>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">What is a System?</h2>
+        <p>A system is a collection of interconnected or interrelated components that work together to achieve a specific purpose or function. Systems accept inputs, process them, and produce outputs. Understanding systems is crucial across various fields such as engineering, biology, sociology, and management, as it aids in analysis, design, and optimization. Systems can be categorized into natural and artificial types, each with distinct properties and behaviors.</p>
+      </section>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-4">Natural and Artificial Systems</h2>
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold mb-4">1.2.1 Natural and Artificial Systems</h2>
 
-      <h3 className="text-xl font-semibold mb-2">Natural Systems</h3>
-      <p><strong>Definition:</strong> Interconnected elements or components existing in nature.</p>
-      <p><strong>Characteristics:</strong></p>
-      <ul className="list-disc pl-6 mb-2">
-        <li>Self-regulating</li>
-        <li>Adaptive</li>
-        <li>Maintain stability</li>
-      </ul>
-      <p><strong>Examples:</strong></p>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Ecosystems
-          <ul className="list-disc pl-6">
-            <li>Forest ecosystems (e.g., tropical rainforest)</li>
-            <li>Aquatic ecosystems (e.g., freshwater lakes, coral reefs)</li>
-            <li>Grassland ecosystems (e.g., African savanna)</li>
-          </ul>
-        </li>
-        <li>Weather Systems</li>
-        <li>Geological Systems
-          <ul className="list-disc pl-6">
-            <li>Plate tectonics</li>
-            <li>Mountain systems</li>
-          </ul>
-        </li>
-        <li>Hydrological Systems</li>
-        <li>Solar System</li>
-        <li>Biological Systems
-          <ul className="list-disc pl-6">
-            <li>Human body</li>
-            <li>Coral reef</li>
-            <li>Rainforest canopy</li>
-          </ul>
-        </li>
-      </ul>
+        <h3 className="text-xl font-medium mb-4">Natural Systems</h3>
+        <p>Natural systems are collections of components existing in nature, characterized by their ability to self-regulate, adapt, and maintain stability. These systems are diverse and each has unique characteristics and interactions.</p>
 
-      <h3 className="text-xl font-semibold mb-2">Artificial Systems</h3>
-      <p><strong>Definition:</strong> Man-made or human-made systems created for specific purposes.</p>
-      <ul className="list-disc pl-6 mb-2">
-        <li>Intentionally constructed</li>
-        <li>Serve specific purposes or solve problems</li>
-        <li>Require planning, engineering, and maintenance</li>
-      </ul>
-      <p><strong>Examples:</strong></p>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Communication Systems
-          <ul className="list-disc pl-6">
-            <li>Telephone networks</li>
-            <li>Internet and computer networks</li>
-            <li>Satellite communication systems</li>
-          </ul>
-        </li>
-        <li>Information Systems
-          <ul className="list-disc pl-6">
-            <li>Databases</li>
-            <li>Software applications</li>
-          </ul>
-        </li>
-        <li>Transportation Systems
-          <ul className="list-disc pl-6">
-            <li>Automobiles</li>
-            <li>Aircraft</li>
-            <li>Trains and rail systems</li>
-            <li>Subways and mass transit</li>
-          </ul>
-        </li>
-        <li>Energy Systems
-          <ul className="list-disc pl-6">
-            <li>Power plants</li>
-            <li>Renewable energy systems</li>
-            <li>Electrical grids</li>
-          </ul>
-        </li>
-        <li>Manufacturing Systems
-          <ul className="list-disc pl-6">
-            <li>Factory automation</li>
-            <li>Assembly lines</li>
-          </ul>
-        </li>
-        <li>Healthcare Systems
-          <ul className="list-disc pl-6">
-            <li>Hospital Information Systems (HIS)</li>
-            <li>Medical devices</li>
-          </ul>
-        </li>
-      </ul>
+        <div className="space-y-4">
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Ecosystems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Forest Ecosystems:</strong> For example, tropical rainforests with diverse plant and animal species.</li>
+              <li><strong>Aquatic Ecosystems:</strong> Includes freshwater lakes, rivers, and marine environments like coral reefs.</li>
+              <li><strong>Grassland Ecosystems:</strong> Such as the African savanna, which supports grazing animals like zebras and wildebeests.</li>
+              <li><strong>Weather Systems:</strong> Involve atmospheric interactions including rainfall, wind patterns, and temperature changes.</li>
+            </ul>
+          </div>
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Key Differences</h2>
-      <ul className="list-disc pl-6 mb-4">
-        <li>Natural systems occur organically; artificial systems are designed by humans.</li>
-        <li>Natural systems are self-sustaining; artificial systems often require human intervention and maintenance.</li>
-        <li>Natural systems are typically more complex and adaptable; artificial systems are purpose-built for specific functions.</li>
-      </ul>
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Geological Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Plate Tectonics:</strong> Movement of Earth's lithospheric plates leading to earthquakes and volcanic eruptions.</li>
+              <li><strong>Mountain Systems:</strong> Formed by tectonic plate collisions, such as the Himalayas.</li>
+              <li><strong>Hydrological Systems:</strong> Cover water movement, distribution, and quality, including rivers, lakes, and the water cycle.</li>
+              <li><strong>Solar System:</strong> The Sun, planets, moons, asteroids, and comets interact under gravity to form our solar system.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Biological Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Human Body:</strong> A complex system with organs, tissues, cells, and biochemical processes.</li>
+              <li><strong>Coral Reef:</strong> An ecosystem formed by coral colonies hosting various marine species.</li>
+              <li><strong>Rainforest Canopy:</strong> The upper layer of a rainforest, home to specialized plants and animals.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 className="text-xl font-medium mb-4">Artificial Systems</h3>
+        <p>Artificial systems are human-made, designed to meet specific needs, solve problems, or achieve particular goals. They range from simple devices to complex structures and require careful planning, engineering, and maintenance.</p>
+
+        <div className="space-y-4">
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Communication Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Telephone Networks:</strong> Facilitate long-distance voice communication.</li>
+              <li><strong>Internet and Computer Networks:</strong> Enable global data sharing and digital communication.</li>
+              <li><strong>Satellite Communication Systems:</strong> Allow long-distance, wireless communication.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Information Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Databases:</strong> Efficiently store and retrieve data.</li>
+              <li><strong>Software Applications:</strong> Include word processors, spreadsheets, and video editing software.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Transportation Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Automobiles:</strong> Designed for personal and mass transportation on roads.</li>
+              <li><strong>Aircraft:</strong> Engineered for air travel, including airplanes, helicopters, and drones.</li>
+              <li><strong>Trains and Rail Systems:</strong> Developed for efficient land transportation on tracks.</li>
+              <li><strong>Subways and Mass Transit:</strong> Manage the movement of large numbers of people within urban areas.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Energy Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Power Plants:</strong> Generate electricity from sources like coal, natural gas, nuclear, or renewable resources.</li>
+              <li><strong>Renewable Energy Systems:</strong> Include solar panels, wind turbines, and hydroelectric plants.</li>
+              <li><strong>Electrical Grids:</strong> Infrastructure for distributing electrical power.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Manufacturing Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Factory Automation:</strong> Uses robotics and conveyor systems to automate manufacturing processes.</li>
+              <li><strong>Assembly Lines:</strong> Systems for mass-producing goods.</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-lg font-semibold mb-2">Healthcare Systems:</h4>
+            <ul className="list-disc ml-6 space-y-2">
+              <li><strong>Hospital Information Systems (HIS):</strong> Manage patient records, billing, and healthcare data.</li>
+              <li><strong>Medical Devices:</strong> Include MRI machines, X-ray equipment, and artificial organs.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
