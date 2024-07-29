@@ -14,7 +14,7 @@ export default function page() {
                     <section>
                         <h2 className="text-2xl font-semibold text-gray-700">What is Main Memory?</h2>
                         <p className="mt-4 text-gray-600">
-                            Main memory is the part of your computer that holds data for quick use. It's like a desk where you keep things you're working on right now. The computer can grab info from here very fast.
+                            Main memory is the part of your computer that holds data for quick use. It&apos;s like a desk where you keep things you&apos;re working on right now. The computer can grab info from here very fast.
                         </p>
                     </section>
                     <section>
@@ -26,7 +26,7 @@ export default function page() {
                             </div>
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">ROM (Read-Only Memory)</h4>
-                                <p>ROM keeps data even when your computer is off. It holds info that doesn't change, like startup instructions. You can read ROM, but you can't change it easily.</p>
+                                <p>ROM keeps data even when your computer is off. It holds info that doesn&apos;t change, like startup instructions. You can read ROM, but you can&apos;t change it easily.</p>
                             </div>
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">SIMM (Single Inline Memory Module)</h4>
@@ -34,7 +34,7 @@ export default function page() {
                             </div>
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">DIMM (Dual Inline Memory Module)</h4>
-                                <p>DIMM is a newer type of memory stick. It's used in most computers today. DIMMs are faster and hold more data than SIMMs.</p>
+                                <p>DIMM is a newer type of memory stick. It&apos;s used in most computers today. DIMMs are faster and hold more data than SIMMs.</p>
                             </div>
                         </div>
                     </section>
@@ -47,7 +47,7 @@ export default function page() {
                     <section>
                         <h3 className="text-xl font-semibold text-gray-700">Why Main Memory Matters</h3>
                         <p className="mt-4 text-gray-600">
-                            Main memory is key to how fast your computer works. More memory often means a faster computer. It's like having a bigger desk - you can keep more stuff within easy reach.
+                            Main memory is key to how fast your computer works. More memory often means a faster computer. It&apos;s like having a bigger desk - you can keep more stuff within easy reach.
                         </p>
                     </section>
                 </main>

@@ -107,7 +107,7 @@ export default function page() {
                             <div>
                                 <h3 className="text-xl font-semibold">Network Administrator</h3>
                                 <ul className="list-disc list-inside ml-4">
-                                    <li>Manages and maintains an organization's computer networks</li>
+                                    <li>Manages and maintains an organization&apos;s computer networks</li>
                                     <li>Installs and configures network hardware and software</li>
                                     <li>Monitors network performance and troubleshoots issues</li>
                                     <li>Implements security measures to protect against cyber threats</li>
@@ -151,7 +151,7 @@ export default function page() {
                             <div>
                                 <h3 className="text-xl font-semibold">Information Security Analyst</h3>
                                 <ul className="list-disc list-inside ml-4">
-                                    <li>Protects an organization's computer networks and systems from cyber threats</li>
+                                    <li>Protects an organization&apos;s computer networks and systems from cyber threats</li>
                                     <li>Monitors networks for security breaches and investigates incidents</li>
                                     <li>Implements security measures such as firewalls and encryption</li>
                                     <li>Conducts vulnerability assessments and penetration testing</li>

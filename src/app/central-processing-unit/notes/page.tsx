@@ -140,7 +140,7 @@ const page: React.FC = () => {
             <section>
                 <h3 className="text-xl font-semibold ">Register Management</h3>
                 <p className="mt-4">
-                    The CPU's control unit manages the use of registers. Compilers and assemblers play a role in optimizing register usage. Some advanced processors use register renaming to avoid unnecessary data dependencies.
+                    The CPU&apos;s control unit manages the use of registers. Compilers and assemblers play a role in optimizing register usage. Some advanced processors use register renaming to avoid unnecessary data dependencies.
                 </p>
                 <p className="mt-4">
                     Registers are fundamental to the operation of the CPU, serving as the primary working memory for the processor. Their efficient use is critical for maximizing CPU performance and minimizing memory access times.

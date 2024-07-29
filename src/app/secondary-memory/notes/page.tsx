@@ -6,7 +6,7 @@ const page: React.FC = () => {
         <div className="container mx-auto p-4">
             <h1 className="text-3xl font-bold mb-4">What is Secondary Memory?</h1>
             <p className="mb-4">
-                Secondary memory is where your computer stores data for a long time. Unlike main memory, it keeps information even when the power is off. It's like a filing cabinet for your computer.
+                Secondary memory is where your computer stores data for a long time. Unlike main memory, it keeps information even when the power is off. It&apos;s like a filing cabinet for your computer.
             </p>
 
             <h2 className="text-2xl font-semibold mb-2">Types of Secondary Memory:</h2>
@@ -62,7 +62,7 @@ const page: React.FC = () => {
                 <li>Data is written to the device</li>
                 <li>It stays there until you erase it</li>
                 <li>You can access it anytime</li>
-                <li>It's slower than main memory but can hold much more</li>
+                <li>It&apos;s slower than main memory but can hold much more</li>
             </ul>
 
             <h2 className="text-2xl font-semibold mb-2">Why Secondary Memory Matters:</h2>
@@ -82,7 +82,7 @@ const page: React.FC = () => {
             </ul>
 
             <p className="font-semibold">
-                Remember: Technology keeps improving. New types of secondary memory are always being developed. They're getting faster, smaller, and can hold more data.
+                Remember: Technology keeps improving. New types of secondary memory are always being developed. They&apos;re getting faster, smaller, and can hold more data.
             </p>
         </div>
     );

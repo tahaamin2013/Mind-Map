@@ -67,3 +67,32 @@
     @apply bg-background text-foreground;
   }
 }
+/* styles/mermaid.css */
+.mermaid .node rect {
+  fill: #f0f4f8;
+  /* Light background for nodes */
+  stroke: #3b82f6;
+  /* Blue border for nodes */
+  stroke-width: 2px;
+}
+
+.mermaid .edgePath path {
+  stroke: #3b82f6;
+  /* Blue color for edges */
+  stroke-width: 2px;
+}
+
+.mermaid .node text {
+  fill: #1f2937;
+  /* Dark text color */
+  font-size: 14px;
+  /* Adjust text size */
+}
+
+.mermaid .subgraph {
+  border: 1px solid #e5e7eb;
+  /* Light border for subgraphs */
+  border-radius: 8px;
+  background-color: #f9fafb;
+  /* Light background for subgraphs */
+}

@@ -20,7 +20,7 @@ export default function page() {
                         <div className="mt-4 space-y-6 text-gray-600">
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Bit</h4>
-                                <p>A bit is the smallest unit of data. It's like a tiny switch that can be on or off. We show this as a 1 (on) or 0 (off).</p>
+                                <p>A bit is the smallest unit of data. It&apos;s like a tiny switch that can be on or off. We show this as a 1 (on) or 0 (off).</p>
                             </div>
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Byte</h4>
@@ -50,7 +50,7 @@ export default function page() {
                     <section>
                         <h2 className="text-2xl font-semibold text-gray-700">Cache Memory</h2>
                         <p className="mt-4 text-gray-600">
-                            Cache is a special type of computer memory that's faster but smaller than regular RAM.
+                            Cache is a special type of computer memory that&apos;s faster but smaller than regular RAM.
                         </p>
                         <div className="mt-4 space-y-6 text-gray-600">
                             <div>
@@ -112,7 +112,7 @@ export default function page() {
                         <div className="mt-4 space-y-6 text-gray-600">
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Graphics Cards</h4>
-                                <p>Improve a computer's ability to render images and video. Essential for high-end gaming and graphics-intensive work.</p>
+                                <p>Improve a computer&apos;s ability to render images and video. Essential for high-end gaming and graphics-intensive work.</p>
                             </div>
                             <div>
                                 <h4 className="text-lg font-semibold text-gray-700">Sound Cards</h4>
