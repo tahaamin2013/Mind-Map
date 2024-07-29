@@ -112,6 +112,7 @@ const data: Section[] = [
             { href: "unit-1/quiz", text: "MCQS" },
             { href: "unit-1/brief-questions", text: "Brief Questions" },
             { href: "unit-1/detailed-questions", text: "Detailed Questions" },
+            { href: "unit-1/content", text: "Content" },
         ],
     },
 ];
