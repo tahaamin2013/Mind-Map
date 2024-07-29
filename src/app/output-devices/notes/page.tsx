@@ -48,8 +48,8 @@ const page = () => {
         When we talk about output, we often use two terms:
       </p>
       <ul className="list-disc list-inside mb-4">
-        <li><strong>Soft Copy:</strong> This is what we see on the screen. It&apos;s called "soft" because we can&apos;t touch it. Examples are things we see on monitors or hear from speakers.</li>
-        <li><strong>Hard Copy:</strong> This is output we can touch, like printed papers or photos. It&apos;s called "hard" because it&apos;s a real, physical thing.</li>
+        <li><strong>Soft Copy:</strong> This is what we see on the screen. It&apos;s called &quot;soft&quot; because we can&apos;t touch it. Examples are things we see on monitors or hear from speakers.</li>
+        <li><strong>Hard Copy:</strong> This is output we can touch, like printed papers or photos. It&apos;s called &quot;hard&quot; because it&apos;s a real, physical thing.</li>
       </ul>
 
       <p className="mb-4">

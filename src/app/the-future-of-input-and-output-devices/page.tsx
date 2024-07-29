@@ -12,7 +12,7 @@ const page = () => {
 
             <h2 className="text-2xl font-semibold mb-2">Virtual Reality (VR) and Augmented Reality (AR):</h2>
             <ul className="list-disc list-inside mb-4">
-                <li><strong>Input:</strong> Special gloves or hand trackers might let us "touch" virtual objects.</li>
+                <li><strong>Input:</strong> Special gloves or hand trackers might let us &quot;touch&quot; virtual objects.</li>
                 <li><strong>Output:</strong> VR headsets could make us feel like we&apos;re in a different world. AR glasses might add computer images to what we see in the real world.</li>
             </ul>
 
@@ -44,7 +44,7 @@ const page = () => {
 
             <h2 className="text-2xl font-semibold mb-2">Haptic Feedback:</h2>
             <ul className="list-disc list-inside mb-4">
-                <li><strong>Output:</strong> Devices might let us "feel" virtual objects. A phone could feel bumpy when we touch a picture of a rough surface.</li>
+                <li><strong>Output:</strong> Devices might let us &quot;feel&quot; virtual objects. A phone could feel bumpy when we touch a picture of a rough surface.</li>
             </ul>
 
             <h2 className="text-2xl font-semibold mb-2">Smart Contact Lenses:</h2>
