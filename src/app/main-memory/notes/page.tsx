@@ -41,7 +41,7 @@ export default function page() {
                     <section>
                         <h3 className="text-xl font-semibold text-gray-700">How Memory Works</h3>
                         <p className="mt-4 text-gray-600">
-                            Think of memory like a big grid. Each spot in the grid holds a tiny bit of data. The computer knows where each bit is and can find it fast. This is why we call it "random access" - the computer can jump to any spot quickly.
+                            Think of memory like a big grid. Each spot in the grid holds a tiny bit of data. The computer knows where each bit is and can find it fast. This is why we call it &quot;random access&quot; - the computer can jump to any spot quickly.
                         </p>
                     </section>
                     <section>
