@@ -44,10 +44,10 @@ const page = () => {
             </ul>
 
             <p className="mb-4">
-                Understanding these I/O devices is crucial as they form the interface between the computer's internal processes and the external world, facilitating human-computer interaction and data exchange with other systems.
+                Understanding these I/O devices is crucial as they form the interface between the computer&apos;s internal processes and the external world, facilitating human-computer interaction and data exchange with other systems.
             </p>
             <p className="mb-4">
-                In the next chapter, we'll discuss various types of ports that allow these I/O devices to connect to the computer.
+                In the next chapter, we&apos;ll discuss various types of ports that allow these I/O devices to connect to the computer.
             </p>
         </div>
     );

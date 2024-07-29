@@ -7,7 +7,7 @@ const page = () => {
         <div className="container mx-auto p-4">
             <h1 className="text-3xl font-bold mb-4">Chapter 5: Ports</h1>
             <p className="mb-4">
-                Ports are connection points on a computer that allow various devices to be connected, enabling communication between the computer and external devices. They play a crucial role in expanding a computer's capabilities and facilitating data transfer.
+                Ports are connection points on a computer that allow various devices to be connected, enabling communication between the computer and external devices. They play a crucial role in expanding a computer&apos;s capabilities and facilitating data transfer.
             </p>
 
             <h2 className="text-2xl font-semibold mb-3">5.1 Serial Ports</h2>
@@ -50,7 +50,7 @@ const page = () => {
                 Understanding these ports is essential for connecting various devices to a computer and ensuring compatibility. The trend in recent years has been towards universal, high-speed serial interfaces like USB and Thunderbolt, which can handle multiple types of devices and data transfer needs.
             </p>
             <p className="mb-4">
-                In the next and final chapter, we'll discuss the motherboard, which houses many of these ports and serves as the central hub connecting all computer components.
+                In the next and final chapter, we&apos;ll discuss the motherboard, which houses many of these ports and serves as the central hub connecting all computer components.
             </p>
         </div>
     );

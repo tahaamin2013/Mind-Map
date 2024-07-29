@@ -26,7 +26,7 @@ const Motherboard = () => {
                 <li><strong>Expansion Slots:</strong> Allow for the addition of extra components. Common types include PCI, PCI Express (PCIe).</li>
                 <li><strong>SATA Connectors:</strong> For connecting storage devices like hard drives and SSDs.</li>
                 <li><strong>Power Connectors:</strong> Supply power to the motherboard and its components. Include the main 24-pin connector and CPU power connector.</li>
-                <li><strong>Front Panel Connectors:</strong> For connecting the computer case's power button, reset button, and LED indicators.</li>
+                <li><strong>Front Panel Connectors:</strong> For connecting the computer case&apos;s power button, reset button, and LED indicators.</li>
                 <li><strong>Battery:</strong> Maintains BIOS settings and system time when the computer is powered off.</li>
             </ul>
 
@@ -54,14 +54,14 @@ const Motherboard = () => {
             </ul>
 
             <p className="mb-4">
-                Understanding the motherboard is crucial as it's the foundation of the computer system, determining compatibility and influencing overall performance and expandability.
+                Understanding the motherboard is crucial as it&apos;s the foundation of the computer system, determining compatibility and influencing overall performance and expandability.
             </p>
             <p className="mb-4">
-                This concludes our comprehensive guide to computer components. We've covered the CPU, memory systems, I/O devices, ports, and finally, the motherboard. Each of these components plays a vital role in the functioning of a computer, and understanding their interactions provides valuable insight into computer systems as a whole.
+                This concludes our comprehensive guide to computer components. We&apos;ve covered the CPU, memory systems, I/O devices, ports, and finally, the motherboard. Each of these components plays a vital role in the functioning of a computer, and understanding their interactions provides valuable insight into computer systems as a whole.
             </p>
             <h1 className="text-3xl font-bold mb-4">Chapter 7: Conclusion</h1>
             <p className="mb-4">
-                Throughout this book, we've taken an in-depth journey through the core components that make up a modern computer system. Let's recap the key points we've covered:
+                Throughout this book, we&apos;ve taken an in-depth journey through the core components that make up a modern computer system. Let&apos;s recap the key points we&apos;ve covered:
             </p>
 
             <ul className="list-disc list-inside mb-4">
@@ -73,10 +73,10 @@ const Motherboard = () => {
             </ul>
 
             <p className="mb-4">
-                Understanding these components and their interactions is crucial in today's technology-driven world. Whether you're troubleshooting problems, upgrading your system, or simply satisfying your curiosity about how computers work, this knowledge forms a solid foundation.
+                Understanding these components and their interactions is crucial in today&apos;s technology-driven world. Whether you&apos;re troubleshooting problems, upgrading your system, or simply satisfying your curiosity about how computers work, this knowledge forms a solid foundation.
             </p>
             <p className="mb-4">
-                As technology continues to evolve, we're seeing trends like:
+                As technology continues to evolve, we&apos;re seeing trends like:
             </p>
             <ul className="list-disc list-inside mb-4">
                 <li>Increased integration of components (e.g., CPUs with built-in graphics processing)</li>
@@ -85,13 +85,13 @@ const Motherboard = () => {
                 <li>The advent of new interfaces and connection standards</li>
             </ul>
             <p className="mb-4">
-                Despite these changes, the fundamental principles we've discussed remain relevant. The CPU still processes instructions, memory still stores data, and input/output devices still bridge the gap between computers and users.
+                Despite these changes, the fundamental principles we&apos;ve discussed remain relevant. The CPU still processes instructions, memory still stores data, and input/output devices still bridge the gap between computers and users.
             </p>
             <p className="mb-4">
-                We hope this book has provided you with a comprehensive understanding of computer components. Whether you're a student, an IT professional, or a technology enthusiast, this knowledge will serve you well in navigating the ever-changing landscape of computer technology.
+                We hope this book has provided you with a comprehensive understanding of computer components. Whether you&apos;re a student, an IT professional, or a technology enthusiast, this knowledge will serve you well in navigating the ever-changing landscape of computer technology.
             </p>
             <p className="mb-4">
-                Remember, every computer you use, from your smartphone to supercomputers, operates on these basic principles. By understanding these components, you're better equipped to make informed decisions about technology use, purchases, and even career paths in the tech industry.
+                Remember, every computer you use, from your smartphone to supercomputers, operates on these basic principles. By understanding these components, you&apos;re better equipped to make informed decisions about technology use, purchases, and even career paths in the tech industry.
             </p>
             <p className="mb-4">
                 Thank you for joining us on this exploration of computer components. May this knowledge serve as a stepping stone for further learning and exploration in the fascinating world of computer technology.
