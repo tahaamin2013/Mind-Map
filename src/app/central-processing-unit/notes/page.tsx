@@ -70,6 +70,82 @@ const page: React.FC = () => {
             <p className="mb-4">
                 The bus system is crucial for the efficient operation of the computer, allowing different components to communicate and work together seamlessly.
             </p>
+
+            <section>
+                <h2 className="text-2xl font-semibold ">2.5 Registers</h2>
+                <p className="mt-4">
+                    Registers are small, high-speed storage locations directly within the CPU. They are the fastest form of data storage in a computer, allowing the CPU to access data almost instantly. Registers play a crucial role in the execution of instructions and the overall performance of the processor.
+                </p>
+                <p className="mt-4">
+                    Key characteristics of registers:
+                </p>
+                <ul className="list-disc list-inside ml-4">
+                    <li>Very fast access time (typically a single CPU clock cycle)</li>
+                    <li>Limited in number and size</li>
+                    <li>Directly accessible by the CPU</li>
+                    <li>Used for temporary data storage during instruction execution</li>
+                </ul>
+            </section>
+            <section>
+                <h3 className="text-xl font-semibold ">Types of Registers:</h3>
+                <div className="mt-4 space-y-6">
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.1 General-Purpose Registers</h4>
+                        <p>Used for a variety of operations, can hold data, memory addresses, or intermediate results. Examples: AX, BX, CX, DX in x86 architecture.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.2 Accumulator</h4>
+                        <p>Primary register for arithmetic and logical operations. Stores the result of arithmetic and logical operations. Often designated as register A or AX.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.3 Program Counter (PC)</h4>
+                        <p>Also known as the Instruction Pointer (IP). Holds the memory address of the next instruction to be executed. Automatically incremented after each instruction fetch.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.4 Instruction Register (IR)</h4>
+                        <p>Holds the current instruction being executed. Contents are decoded by the control unit to determine the operation.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.5 Memory Address Register (MAR)</h4>
+                        <p>Holds the memory address for a read or write operation. Connected to the address bus.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.6 Memory Data Register (MDR)</h4>
+                        <p>Also known as Memory Buffer Register (MBR). Holds data being transferred to or from memory. Connected to the data bus.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.7 Stack Pointer (SP)</h4>
+                        <p>Points to the top of the stack in memory. Used for managing subroutine calls and returns.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.8 Status Register (SR)</h4>
+                        <p>Also known as Flags Register. Contains condition code bits or flags. Flags indicate the result of operations (e.g., zero, carry, overflow).</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.9 Index Registers</h4>
+                        <p>Used for indexed addressing modes. Facilitate operations on arrays or other structured data.</p>
+                    </div>
+                    <div>
+                        <h4 className="text-lg font-semibold ">2.5.10 Base Registers</h4>
+                        <p>Hold base addresses for relative addressing. Used in memory segmentation.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3 className="text-xl font-semibold ">Importance of Registers</h3>
+                <p className="mt-4">
+                    Registers provide the fastest possible access to data, crucial for CPU performance. Many CPU instructions operate directly on data in registers. Registers like MAR and MDR facilitate efficient memory operations. PC and SP registers manage the flow of program execution. The status register provides essential information about operation results.
+                </p>
+            </section>
+            <section>
+                <h3 className="text-xl font-semibold ">Register Management</h3>
+                <p className="mt-4">
+                    The CPU's control unit manages the use of registers. Compilers and assemblers play a role in optimizing register usage. Some advanced processors use register renaming to avoid unnecessary data dependencies.
+                </p>
+                <p className="mt-4">
+                    Registers are fundamental to the operation of the CPU, serving as the primary working memory for the processor. Their efficient use is critical for maximizing CPU performance and minimizing memory access times.
+                </p>
+            </section>
         </div>
     );
 };

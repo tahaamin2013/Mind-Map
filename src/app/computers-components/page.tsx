@@ -75,7 +75,7 @@ const data: Section[] = [
 
 export default function page() {
     return (
-        <div className="p-3">
+         <div className="p-3">
             <h1 className="font-bold text-3xl">Unit 2S: Computer Components</h1>
             <div className="flex gap-6 flex-wrap mt-3">
                 {data.map((section) => (
@@ -90,7 +90,16 @@ export default function page() {
                         </div>
                     </div>
                 ))}
+                <div className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
+                    <h1 className="font-bold text-lg">Computer Compoennts</h1>
+                    <div className="flex flex-row gap-4 flex-wrap">
+                        <Link href='/mind-map-of-computer-components' className="bg-violet-900 w-fit q py-2 text-center px-4 text-white rounded-xl">
+                            Mind Map
+                        </Link>
+                    </div>
+                </div>
             </div>
+           
         </div>
     );
 }

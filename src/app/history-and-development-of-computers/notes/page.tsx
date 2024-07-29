@@ -143,7 +143,7 @@ const page = () => {
                             <strong>Hybrid Computers</strong>
                             <ul className="list-disc list-inside ml-6">
                                 <li>Description: Combine features of both analogue and digital computers.</li>
-                                <li>Characteristics: Use analogue components for input/output and digital components for processing, handling both continuous and discrete data.</li>
+                                <li>Characteristics: Use digital components for input/output and analogue components for processing, handling both continuous and discrete data.</li>
                                 <li>Examples: Medical monitoring systems, scientific simulation systems.</li>
                             </ul>
                         </li>
