@@ -44,7 +44,7 @@ const Page = () => {
           <li>Controls the ALU: Directs it to perform the required operations.</li>
           <li>Manages memory operations: Oversees reading from and writing to memory.</li>
           <li>Coordinates I/O operations: Sends and receives data to and from peripheral devices.</li>
-          <li>Provides timing and control signals: Ensures that all components operate in sync with the system's clock.</li>
+          <li>Provides timing and control signals: Ensures that all components operate in sync with the system&apos;s clock.</li>
         </ul>
       </section>
 

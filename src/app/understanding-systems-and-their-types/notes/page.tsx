@@ -30,7 +30,7 @@ const Page = () => {
           <div>
             <h4 className="text-lg font-semibold mb-2">Geological Systems:</h4>
             <ul className="list-disc ml-6 space-y-2">
-              <li><strong>Plate Tectonics:</strong> Movement of Earth's lithospheric plates leading to earthquakes and volcanic eruptions.</li>
+              <li><strong>Plate Tectonics:</strong> Movement of Earth&apos;s lithospheric plates leading to earthquakes and volcanic eruptions.</li>
               <li><strong>Mountain Systems:</strong> Formed by tectonic plate collisions, such as the Himalayas.</li>
               <li><strong>Hydrological Systems:</strong> Cover water movement, distribution, and quality, including rivers, lakes, and the water cycle.</li>
               <li><strong>Solar System:</strong> The Sun, planets, moons, asteroids, and comets interact under gravity to form our solar system.</li>

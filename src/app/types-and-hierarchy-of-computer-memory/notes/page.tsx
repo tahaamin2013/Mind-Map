@@ -12,7 +12,7 @@ const page = () => {
             <h2 className="text-2xl font-semibold mt-6 mb-2">Memory Terminology</h2>
             <ul className="list-disc ml-6 mb-4">
                 <li><strong>Bit:</strong> The smallest unit of memory, representing a binary digit, either 0 or 1. Each bit corresponds to an electronic cell in memory which is either ON (1) or OFF (0).</li>
-                <li><strong>Byte:</strong> A group of 8 bits constitutes one byte. It is the basic unit of memory used to store one character of data, such as 'A', 'b', or '*'. Memory size is generally measured in bytes, with higher units including:
+                <li><strong>Byte:</strong> A group of 8 bits constitutes one byte. It is the basic unit of memory used to store one character of data, such as &apos;A&apos;, &apos;b&apos;, or &apos;*&apos;. Memory size is generally measured in bytes, with higher units including:
                     <ul className="list-disc ml-6">
                         <li>Kilobyte (KB): 1 KB = 1024 Bytes</li>
                         <li>Megabyte (MB): 1 MB = 1024 KB</li>
@@ -51,7 +51,7 @@ const page = () => {
                         <li>DVDs (Digital Versatile Discs)</li>
                         <li>Blu-ray Discs (BDs)</li>
                     </ul>
-                    Data is encoded in the form of pits and lands on the disk's surface, which are read by a laser beam. Optical storage is relatively inexpensive and offers high capacity but is generally slower than chip memory.
+                    Data is encoded in the form of pits and lands on the disk&apos;s surface, which are read by a laser beam. Optical storage is relatively inexpensive and offers high capacity but is generally slower than chip memory.
                 </li>
             </ul>
 

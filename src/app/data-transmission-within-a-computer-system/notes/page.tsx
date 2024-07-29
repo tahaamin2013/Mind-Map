@@ -42,7 +42,7 @@ const DataTransmission = () => {
                     <li><strong>Microprocessor Bus Architecture:</strong>
                         <ul className="list-disc ml-6 space-y-2">
                             <li><strong>Internal Address Bus:</strong> Carries memory addresses within the CPU.</li>
-                            <li><strong>Internal Data Bus:</strong> Transfers data between the CPU's internal components.</li>
+                            <li><strong>Internal Data Bus:</strong> Transfers data between the CPU&apos;s internal components.</li>
                             <li><strong>Internal Control Bus:</strong> Delivers control signals within the CPU.</li>
                         </ul>
                     </li>
@@ -81,7 +81,7 @@ const DataTransmission = () => {
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Instruction Cycle</h2>
                 <p>
-                    The Instruction Cycle is the process by which a computer executes a program's instructions. It involves:
+                    The Instruction Cycle is the process by which a computer executes a program&apos;s instructions. It involves:
                 </p>
                 <ul className="list-disc ml-6 space-y-2">
                     <li><strong>Fetching:</strong> Retrieving the next instruction from memory.</li>
