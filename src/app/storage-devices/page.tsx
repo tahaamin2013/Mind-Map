@@ -49,29 +49,6 @@ const data: Section[] = [
             { href: "nofdasfdstes", text: "Detailed Questions" },
         ],
     },
-    {
-        id: "4",
-        title: "Chapter 4654654654436354543: Choosing the Right Devices for Your Tasks",
-        links: [
-            { href: "ports/notes", text: "Notes" },
-            { href: "nfdsfdsafotes", text: "Mind Map" },
-            { href: "ports/quiz", text: "MCQs" },
-            { href: "ports/brief-questions", text: "Brief Questions" },
-            { href: "nofdasfdstes", text: "Detailed Questions" },
-        ],
-    },
-    {
-        id: "5",
-        title: "Chapter 5: The876876876 Future of876876768 Input and Output Devices",
-        links: [
-            { href: "ports/notes", text: "Notes" },
-            { href: "nfdsfdsafotes", text: "Mind Map" },
-            { href: "ports/quiz", text: "MCQs" },
-            { href: "ports/brief-questions", text: "Brief Questions" },
-            { href: "nofdasfdstes", text: "Detailed Questions" },
-        ],
-    },
-
 ];
 
 export default function page() {
