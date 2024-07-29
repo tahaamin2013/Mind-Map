@@ -45,7 +45,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 p-6">
-      <MermaidDiagram />
       <div className="mx-auto max-w-6xl">
         <h1 className="mb-8 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
           Explore Our Units
