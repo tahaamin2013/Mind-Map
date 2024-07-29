@@ -19,33 +19,33 @@ export default function ComputerSystemsSummary() {
             </section>
 
             <section className="mb-8">
-                <h2 className="text-2xl font-semibold mb-4">Napier's Bone</h2>
-                <p>John Napier developed Napier's bones, which used 9 strips marked with numerals for multiplication and division, introducing the decimal point system.</p>
+                <h2 className="text-2xl font-semibold mb-4">Napier&apos;s Bone</h2>
+                <p>John Napier developed Napier&apos;s bones, which used 9 strips marked with numerals for multiplication and division, introducing the decimal point system.</p>
             </section>
 
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Pascaline</h2>
-                <p>Blaise Pascal's 1642 invention, the Pascaline, was the first mechanical calculator, consisting of gears and wheels.</p>
+                <p>Blaise Pascal&apos;s 1642 invention, the Pascaline, was the first mechanical calculator, consisting of gears and wheels.</p>
             </section>
 
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Stepped Reckoner or Leibniz Wheel</h2>
-                <p>Wilhelm Leibniz improved Pascal's device in 1673, creating the digital mechanical calculator known as the stepped reckoner using grooved wheels.</p>
+                <p>Wilhelm Leibniz improved Pascal&apos;s device in 1673, creating the digital mechanical calculator known as the stepped reckoner using grooved wheels.</p>
             </section>
 
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Difference Engine</h2>
-                <p>Charles Babbage's early 1820s invention, the Difference Engine, was a steam-powered calculating machine for basic computations.</p>
+                <p>Charles Babbage&apos;s early 1820s invention, the Difference Engine, was a steam-powered calculating machine for basic computations.</p>
             </section>
 
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Analytical Engine</h2>
-                <p>Charles Babbage's Analytical Engine in 1830 was a mechanical computer that used punch cards, capable of solving complex mathematical problems and storing data.</p>
+                <p>Charles Babbage&apos;s Analytical Engine in 1830 was a mechanical computer that used punch cards, capable of solving complex mathematical problems and storing data.</p>
             </section>
 
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Tabulating Machine</h2>
-                <p>Herman Hollerith's 1890 invention, the Tabulating Machine, based on punch cards, computed statistics and recorded data, leading to the creation of IBM in 1924.</p>
+                <p>Herman Hollerith&apos;s 1890 invention, the Tabulating Machine, based on punch cards, computed statistics and recorded data, leading to the creation of IBM in 1924.</p>
             </section>
 
             <section className="mb-8">
@@ -55,7 +55,7 @@ export default function ComputerSystemsSummary() {
 
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Mark 1</h2>
-                <p>Howard Aiken's Mark I, a digital computer invented in 1944, could add eight-digit numbers and print results using punched cards; it was 50 feet long and weighed 5 tons.</p>
+                <p>Howard Aiken&apos;s Mark I, a digital computer invented in 1944, could add eight-digit numbers and print results using punched cards; it was 50 feet long and weighed 5 tons.</p>
             </section>
 
             <section className="mb-8">

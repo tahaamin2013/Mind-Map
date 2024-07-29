@@ -18,10 +18,10 @@ const Page = () => {
             <div className="grid grid-cols-1 text-left gap-x-8 w-full">
                 <Accordion type="single" collapsible>
                     <AccordionItem value="item-1">
-                        <AccordionTrigger>Describe Napier's Bone and Slide Rule</AccordionTrigger>
+                        <AccordionTrigger>Describe Napier&apos;s Bone and Slide Rule</AccordionTrigger>
                         <AccordionContent>
                             <p>
-                                <strong>Napier's Bones:</strong> Invented by John Napier, these were rods used for multiplication and division. They had multiplication tables engraved on them, which made complex calculations quicker.
+                                <strong>Napier&apos;s Bones:</strong> Invented by John Napier, these were rods used for multiplication and division. They had multiplication tables engraved on them, which made complex calculations quicker.
                             </p>
                             <p>
                                 <strong>Slide Rule:</strong> A mechanical analog computer used for multiplication, division, and other mathematical functions. It consists of a fixed ruler and a sliding scale, with calculations done by aligning the scales.
@@ -54,10 +54,10 @@ const Page = () => {
                     </AccordionItem>
 
                     <AccordionItem value="item-4">
-                        <AccordionTrigger>Ahmed's CRT to LCD Monitor Replacement Justification</AccordionTrigger>
+                        <AccordionTrigger>Ahmed&apos;s CRT to LCD Monitor Replacement Justification</AccordionTrigger>
                         <AccordionContent>
                             <p>
-                                LCD monitors provide better resolution, consume less power, and are more compact than CRT monitors. They reduce eye strain and offer clearer images, benefiting Ahmed's studies and general computer use.
+                                LCD monitors provide better resolution, consume less power, and are more compact than CRT monitors. They reduce eye strain and offer clearer images, benefiting Ahmed&apos;s studies and general computer use.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -120,16 +120,16 @@ const Page = () => {
                     </AccordionItem>
 
                     <AccordionItem value="item-11">
-                        <AccordionTrigger>Function and Significance of Napier's Bone in Early Computing</AccordionTrigger>
+                        <AccordionTrigger>Function and Significance of Napier&apos;s Bone in Early Computing</AccordionTrigger>
                         <AccordionContent>
                             <p>
-                                Napier's Bones were a tool for simplifying multiplication and division, which was a major advancement in early computing technology by allowing faster and more efficient calculations.
+                                Napier&apos;s Bones were a tool for simplifying multiplication and division, which was a major advancement in early computing technology by allowing faster and more efficient calculations.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="item-12">
-                        <AccordionTrigger>Difference Between Charles Babbage's Difference Engine and Analytical Engine</AccordionTrigger>
+                        <AccordionTrigger>Difference Between Charles Babbage&apos;s Difference Engine and Analytical Engine</AccordionTrigger>
                         <AccordionContent>
                             <p>
                                 The Difference Engine was designed for polynomial calculations, while the Analytical Engine was a more advanced, general-purpose mechanical computer with features like conditional branching and loops.
@@ -183,7 +183,6 @@ const Page = () => {
                                     <li><strong>Main Memory (RAM)</strong></li>
                                     <li><strong>Secondary Storage (SSD/HDD)</strong></li>
                                 </ul>
-                                <img src="/path/to/memory-hierarchy-diagram.png" alt="Memory Hierarchy Diagram" />
                             </p>
                         </AccordionContent>
                     </AccordionItem>
@@ -250,7 +249,7 @@ const Page = () => {
                     </AccordionItem>
 
                     <AccordionItem value="item-22">
-                        <AccordionTrigger>Define "Protocol" in Data Communication</AccordionTrigger>
+                        <AccordionTrigger>Define &quot;Protocol&quot; in Data Communication</AccordionTrigger>
                         <AccordionContent>
                             <p>
                                 A protocol in data communication is a set of rules and conventions that determine how data is transmitted and received over a network. It ensures that devices can communicate effectively and reliably.

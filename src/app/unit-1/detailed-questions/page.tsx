@@ -267,7 +267,7 @@ const page = () => {
                                     <li><strong>Processing:</strong> Performing operations on the input data as per the instructions (e.g., calculations, data manipulation) using the CPU.</li>
                                     <li><strong>Storage:</strong> Saving data and instructions in memory for immediate or future use (e.g., RAM, hard drive).</li>
                                     <li><strong>Output:</strong> Presenting the processed data to output devices (e.g., monitor, printer).</li>
-                                    <li><strong>Control:</strong> Directing the manner and sequence in which all of the above operations are carried out using the computer's control unit.</li>
+                                    <li><strong>Control:</strong> Directing the manner and sequence in which all of the above operations are carried out using the computer&apos;`s control unit.</li>
                                 </ul>
                             </p>
                         </AccordionContent>
