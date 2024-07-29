@@ -104,6 +104,16 @@ const data: Section[] = [
             { href: "notes", text: "Detailed Questions" },
         ],
     },
+    {
+        id: "9",
+        title: "Chapter Round up",
+        links: [
+            { href: "unit-1/summary", text: "Summary" },
+            { href: "unit-1/quiz", text: "MCQS" },
+            { href: "unit-1/brief-questions", text: "Brief Questions" },
+            { href: "unit-1/detailed-questions", text: "Detailed Questions" },
+        ],
+    },
 ];
 
 export default function page() {

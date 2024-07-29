@@ -18,11 +18,11 @@ const data: Section[] = [{ id: "1", link: "/unit-1", title: "Unit 1: Computer Sy
 const UnitCard = ({ section }: { section: Section }) => (
   <Link
     href={section.link}
-    className="group h-[130px] relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 p-px shadow-xl transition-all hover:p-1 hover:shadow-2xl"
-  >
-    <div className="relative h-[128px] rounded-xl bg-white p-5 transition-all group-hover:bg-transparent">
-      <h2 className="text-xl font-bold text-gray-800 group-hover:text-white transition-colors">
-        {section.title}
+      className="group h-[130px] relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 p-px shadow-xl transition-all hover:p-1 hover:shadow-2xl"
+    >
+      <div className="relative h-[128px] rounded-xl bg-white p-5 transition-all group-hover:bg-transparent">
+        <h2 className="text-xl font-bold text-gray-800 group-hover:text-white transition-colors">
+          {section.title}
       </h2>
       <div className="mt-1 text-xs font-medium text-gray-500 group-hover:text-purple-200">
         Explore this unit
@@ -49,7 +49,6 @@ export default function Home() {
         <h1 className="mb-8 text-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-600">
           Explore Our Units
         </h1>
-
         <div className="relative mb-12 flex justify-center">
           <input
             type="text"

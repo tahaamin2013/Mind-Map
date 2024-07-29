@@ -3,7 +3,6 @@ import React from 'react'
 const Page = () => {
     return (
         <div className="p-6 max-w-7xl mx-auto">
-            <h1 className="text-4xl font-bold mb-5">Core Components of a Computer System</h1>
             <h1 className="text-3xl font-bold mb-4">Data Transmission in a Computer</h1>
             <p>It&apos;s how information moves between different parts of a computer. These parts include:</p>
             <ul className="list-disc pl-6 mb-4">
@@ -54,7 +53,7 @@ const Page = () => {
             <p>How the CPU talks to things like keyboards and screens:</p>
             <ul className="list-disc pl-6 mb-4">
                 <li>When these devices need attention, they send an &quot;interrupt&quot; signal.</li>
-            </ul>
+            </  ul>
 
             <h2 className="text-2xl font-semibold mb-2">Parallelism: Teamwork for Faster Processing</h2>
             <p>Using multiple processors or computers to work on tasks together helps get work done faster.</p>
