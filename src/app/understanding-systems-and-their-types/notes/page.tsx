@@ -23,8 +23,9 @@ const Page = () => {
               <li><strong>Forest Ecosystems:</strong> For example, tropical rainforests with diverse plant and animal species.</li>
               <li><strong>Aquatic Ecosystems:</strong> Includes freshwater lakes, rivers, and marine environments like coral reefs.</li>
               <li><strong>Grassland Ecosystems:</strong> Such as the African savanna, which supports grazing animals like zebras and wildebeests.</li>
-              <li><strong>Weather Systems:</strong> Involve atmospheric interactions including rainfall, wind patterns, and temperature changes.</li>
             </ul>
+            <h4 className='text-lg font-semibold mb-2 mt-4'>Weather Systems:</h4> <p>Involve atmospheric interactions including rainfall, wind patterns, and temperature changes.</p>
+
           </div>
 
           <div>
@@ -32,9 +33,9 @@ const Page = () => {
             <ul className="list-disc ml-6 space-y-2">
               <li><strong>Plate Tectonics:</strong> Movement of Earth&apos;s lithospheric plates leading to earthquakes and volcanic eruptions.</li>
               <li><strong>Mountain Systems:</strong> Formed by tectonic plate collisions, such as the Himalayas.</li>
-              <li><strong>Hydrological Systems:</strong> Cover water movement, distribution, and quality, including rivers, lakes, and the water cycle.</li>
-              <li><strong>Solar System:</strong> The Sun, planets, moons, asteroids, and comets interact under gravity to form our solar system.</li>
             </ul>
+            <h1 className='text-lg font-semibold mb-2 mt-4'>Hydrological Systems</h1><p>Cover water movement, distribution, and quality, including rivers, lakes, and the water cycle.</p>
+            <h1 className='text-lg font-semibold mb-2 mt-4'>Solar System:</h1><p>Che Sun, planets, moons, asteroids, and comets interact under gravity to form our solar system.</p>
           </div>
 
           <div>

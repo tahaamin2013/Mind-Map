@@ -104,8 +104,19 @@ const data: Section[] = [
             { href: "notes", text: "Detailed Questions" },
         ],
     },
-    {
+     {
         id: "9",
+         title: "1.9 Data Communication",
+        links: [
+            { href: "data-communication/notes", text: "Notes" },
+            { href: "notes", text: "Mind Map" },
+            { href: "data-communication/quiz", text: "MCQs" },
+            { href: "notes", text: "Brief Questions" },
+            { href: "notes", text: "Detailed Questions" },
+        ],
+    },
+    {
+        id: "10",
         title: "Chapter Round up",
         links: [
             { href: "unit-1/summary", text: "Summary" },

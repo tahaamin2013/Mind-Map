@@ -1,6 +1,97 @@
-import React from 'react'
+"use client";
+import React, { useEffect, useRef, useState } from 'react';
+import mermaid from 'mermaid';
+import Image from 'next/image';
 
 const Page = () => {
+  useEffect(() => {
+    mermaid.initialize({ startOnLoad: true });
+    mermaid.contentLoaded();
+  }, []);
+
+  const [zoomLevel1, setZoomLevel1] = useState(1);
+  const [zoomLevel2, setZoomLevel2] = useState(1);
+  const mermaidContainerRef = useRef<HTMLDivElement>(null);
+
+  const mermaidContainerRef1 = useRef<HTMLDivElement>(null);
+  const mermaidContainerRef2 = useRef<HTMLDivElement>(null);
+
+  const zoomIn1 = () => setZoomLevel1(prev => Math.min(prev + 0.1, 2));
+  const zoomIn2 = () => setZoomLevel2(prev => Math.min(prev + 0.1, 2));
+  const zoomOut2 = () => setZoomLevel2(prev => Math.max(prev - 0.1, 0.5));
+  useEffect(() => {
+    if (mermaidContainerRef1.current) {
+      mermaid.contentLoaded();
+    }
+  }, [zoomLevel1]);
+
+  useEffect(() => {
+    if (mermaidContainerRef2.current) {
+      mermaid.contentLoaded();
+    }
+  }, [zoomLevel2]);
+  const diagramDefinition = `
+graph TD
+    DB[Data Bus] --> IR[Instruction Register]
+    IR --> ID[Instruction Decoder]
+    ID --> TCL[Timing and Control Logic]
+    TCL --> CB[Control Bus]
+
+    subgraph Control Unit
+        ID
+        TCL
+    end
+
+    style DB fill:#f9f,stroke:#333,stroke-width:2px
+    style CB fill:#9ff,stroke:#333,stroke-width:2px
+    style Control Unit fill:#ffe,stroke:#333,stroke-width:2px
+    style IR fill:#fcc,stroke:#333,stroke-width:2px
+    `;
+  const diagramDefinition2 = `
+graph TD
+    subgraph CPU[Central Processing Unit]
+        CU[Control Unit]
+        ALU[Arithmetic Logic Unit]
+        Registers[Registers]
+        L1[L1 Cache]
+    end
+
+    L2[L2 Cache]
+    RAM[Main Memory/RAM]
+    SecondaryStorage[Secondary Storage]
+    IO[Input/Output]
+
+    CU <--> ALU
+    CU <--> Registers
+    ALU <--> Registers
+
+    Registers <--> L1
+
+    CPU <-->|Data Bus| L2
+    CPU <-->|Control Bus| L2
+    CPU <-->|Address Bus| L2
+
+    L2 <-->|Data Bus| RAM
+    L2 <-->|Control Bus| RAM
+    L2 <-->|Address Bus| RAM
+
+    RAM <-->|Data Bus| SecondaryStorage
+    RAM <-->|Control Bus| SecondaryStorage
+    RAM <-->|Address Bus| SecondaryStorage
+
+    CPU <-->|Data Bus| IO
+    CPU <-->|Control Bus| IO
+    CPU <-->|Address Bus| IO
+
+    style CPU fill:#f9f,stroke:#333,stroke-width:2px
+    style L2 fill:#fcf,stroke:#333,stroke-width:2px
+    style RAM fill:#bfb,stroke:#333,stroke-width:2px
+    style SecondaryStorage fill:#ffc,stroke:#333,stroke-width:2px
+    style IO fill:#bbf,stroke:#333,stroke-width:2px 
+    `;
+
+  const zoomOut1 = () => setZoomLevel1(prev => Math.max(prev - 0.1, 0.5));
+
   return (
     <div className="p-6 bg-white">
       <h1 className="text-3xl font-bold mb-6">1.4 Von Neumann Architecture</h1>
@@ -8,6 +99,37 @@ const Page = () => {
         Von Neumann Architecture is a fundamental model in computer science that describes the design and operation of most modern computers. Proposed by John von Neumann in 1945, this architecture outlines the structure and functioning of computer systems where data and instructions are stored in the same memory. It consists of several key components including the Central Processing Unit (CPU), memory unit, registers, Arithmetic and Logic Unit (ALU), Control Unit (CU), and Input/Output (I/O) Controller.
       </p>
 
+
+
+
+
+
+      <div className="relative p-6 my-3 h-[300px] overflow-scroll flex  border border-gray-300 rounded-lg shadow-md bg-white">
+        <div className="absolute top-2 right-2 flex space-x-2">
+          <button
+            onClick={zoomIn1}
+            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
+          >
+            Zoom In
+          </button>
+          <button
+            onClick={zoomOut1}
+            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
+          >
+            Zoom Out
+          </button>
+        </div>
+        <div
+          className="mermaid-container"
+          ref={mermaidContainerRef}
+          style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
+        >
+          <div className="mermaid">
+            {diagramDefinition2}
+          </div>
+        </div>
+      </div>
+      <Image src="/von neumann.png" alt='von neumann' width={800} height={800} />
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Central Processing Unit (CPU)</h2>
         <p>
@@ -23,6 +145,8 @@ const Page = () => {
               <li><strong>Accumulator (AC):</strong> Stores intermediate arithmetic and logic results.</li>
               <li><strong>Program Counter (PC):</strong> Contains the address of the next instruction to be executed.</li>
               <li><strong>Current Instruction Register (CIR):</strong> Holds the current instruction being processed.</li>
+              <li><strong>L1 Cache</strong> A small, extremely fast memory cache that is located within the CPU itself. It stores frequently accessed data and instructions to speed up the processing.</li>
+              <li><strong>L2 Cache</strong> A slightly larger but still fast memory cache that may be located within the CPU or on a separate chip close to the CPU. It also stores frequently accessed data and instructions, acting as an intermediary between the L1 cache and the main memory.</li>
             </ul>
           </li>
         </ul>
@@ -35,17 +159,24 @@ const Page = () => {
         </p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4">Control Unit (CU)</h2>
-        <p>
-          The Control Unit (CU) orchestrates the overall operation of the computer. It:
-        </p>
-        <ul className="list-disc ml-6 space-y-2">
-          <li>Controls the ALU: Directs it to perform the required operations.</li>
-          <li>Manages memory operations: Oversees reading from and writing to memory.</li>
-          <li>Coordinates I/O operations: Sends and receives data to and from peripheral devices.</li>
-          <li>Provides timing and control signals: Ensures that all components operate in sync with the system&apos;s clock.</li>
-        </ul>
+      <section className="mb-8 grid grid-cols-2">
+        <div>  <h2 className="text-2xl font-semibold mb-4">Control Unit (CU)</h2>
+          <p>
+            The Control Unit (CU) orchestrates the overall operation of the computer. It:
+          </p>
+          <ul className="list-disc ml-6 space-y-2">
+            <li>Controls the ALU: Directs it to perform the required operations.</li>
+            <li>Manages memory operations: Oversees reading from and writing to memory.</li>
+            <li>Coordinates I/O operations: Sends and receives data to and from peripheral devices.</li>
+            <li>Provides timing and control signals: Ensures that all components operate in sync with the system&apos;s clock.</li>
+          </ul></div>
+        <div>
+          <div className=" border h-[300px] pt-[160px] overflow-y-scroll flex justify-center items-center border-gray-300 rounded-lg shadow-md bg-white">
+            <div className="mermaid">
+              {diagramDefinition}
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="mb-8">
@@ -78,7 +209,7 @@ const Page = () => {
         </p>
       </section>
     </div>
-  )
+  );
 }
 
-export default Page
+export default Page;

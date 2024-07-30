@@ -24,10 +24,6 @@ const Page = () => {
                 <p>The system unit is the central component of a computer, housing essential hardware elements. It includes:</p>
                 <ul className="list-disc ml-6 space-y-2">
                     <li><strong>Motherboard:</strong> The main circuit board, containing the microprocessor, main memory, expansion cards, and connectors. It facilitates communication between various components.</li>
-                    <li><strong>Expansion Slots:</strong> Slots on the motherboard for adding expansion cards.</li>
-                    <li><strong>RAM Memory Slots:</strong> Slots for installing RAM.</li>
-                    <li><strong>Socket for Microprocessor:</strong> Holds the CPU.</li>
-                    <li><strong>Ports:</strong> For connecting input and output devices.</li>
                     <li><strong>Microprocessor (CPU):</strong> The central processing unit, responsible for executing instructions. It contains:
                         <ul className="list-disc ml-6 space-y-2">
                             <li><strong>Control Unit (CU):</strong> Directs operations within the CPU.</li>
@@ -36,6 +32,10 @@ const Page = () => {
                         </ul>
                     </li>
                 </ul>
+                <h1 className='text-lg font-semibold mb-2 mt-4'>Expansion Slots:</h1><p>Slots on the motherboard for adding expansion cards.</p>
+                <h1 className='text-lg font-semibold mb-2 mt-4'>RAM Memory Slots:</h1><p>Slots for installing RAM.</p>
+                <h1 className='text-lg font-semibold mb-2 mt-4'>Socket for Microprocessor:</h1><p>Holds the CPU.</p>
+                <h1 className='text-lg font-semibold mb-2 mt-4'>Ports:</h1><p>For connecting input and output devices.</p>
             </section>
 
             <section className="mb-8">
