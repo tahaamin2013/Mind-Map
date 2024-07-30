@@ -38,7 +38,7 @@ const Page = () => {
                                 <br />
                                 <strong>Comparison</strong>: Napier’s Bones were limited to specific arithmetic functions and did not have storage capabilities, whereas the Analytical Engine was a more comprehensive computing device with programmable features and memory storage.
                                 <br />
-                                <strong>Contribution to Modern Computing</strong>: Napier’s Bones introduced the concept of using a decimal system for calculations, while the Analytical Engine laid the groundwork for programmable computing, influencing future developments such as computers' ability to store and process data.
+                                <strong>Contribution to Modern Computing</strong>: Napier’s Bones introduced the concept of using a decimal system for calculations, while the Analytical Engine laid the groundwork for programmable computing, influencing future developments such as computers&apos; ability to store and process data.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
