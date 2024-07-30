@@ -57,13 +57,20 @@ const page = () => {
                             </ul>
                         </div>
                     </div>
-                    <div>
-                        <h3 className="text-xl font-medium">Stepped Reckoner or Leibniz Wheel</h3>
-                        <ul className="list-disc ml-6 space-y-2">
-                            <li>Created in 1673 by German mathematician Wilhelm Leibniz.</li>
-                            <li>Improved on Pascal&apos;s invention.</li>
-                            <li>A digital mechanical calculator using grooved wheels.</li>
-                        </ul>
+                    <div className='flex flex-col sm:flex-row gap-4'>
+                        <Image src="/Leibnitzrechenmaschine.jpg" className='rounded-xl' height={200} width={290} alt='Abacus' />
+                        <div className='flex flex-col'>
+                            <h3 className="text-xl font-medium">Stepped Reckoner or Leibniz Wheel</h3>
+                            <p className='max-w-[700px] mt-3 mb-3'>Gottfried Wilhelm Leibniz invented this in 1673. He is a German mathematician and Stepped Reckoner or Leibniz Wheel, made in German, and is a calculation & mechanical device.</p>
+                            <p className='max-w-[700px] mt-3 mb-3'>Husnain: Stepped Reckoner or Leibniz Wheel was invented by German mathematician Wilhelm Leibniz in 1673.
+                                It's improved Pascals invention. It can do Addition, Subtraction, Multiplication, and Division. It's a Mechanical Device using grooved wheels.</p>
+
+                            <ul className="list-disc ml-6 space-y-2">
+                                <li>Created in 1673 by German mathematician Wilhelm Leibniz.</li>
+                                <li>Improved on Pascal&apos;s invention.</li>
+                                <li>A digital mechanical calculator using grooved wheels.</li>
+                            </ul>
+                        </div>
                     </div>
                     <div>
                         <h3 className="text-xl font-medium">Difference Engine</h3>
