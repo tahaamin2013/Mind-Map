@@ -104,8 +104,8 @@ graph TD
 
 
 
-      <div className="relative p-6 my-3 h-[300px] overflow-scroll flex  border border-gray-300 rounded-lg shadow-md bg-white">
-        <div className="absolute top-2 right-2 flex space-x-2">
+      <div className="relative p-6 pt-2 my-3 h-[300px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
+        <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
           <button
             onClick={zoomIn1}
             className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
@@ -159,7 +159,7 @@ graph TD
         </p>
       </section>
 
-      <section className="mb-8 grid grid-cols-2">
+      <section className="mb-8 grid grid-cols-1 sm:grid-cols-2">
         <div>  <h2 className="text-2xl font-semibold mb-4">Control Unit (CU)</h2>
           <p>
             The Control Unit (CU) orchestrates the overall operation of the computer. It:
