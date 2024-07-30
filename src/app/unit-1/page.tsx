@@ -24,7 +24,7 @@ const data: Section[] = [
             { href: "history-of-computer-systems-and-computer-generations/mind-map", text: "Mind Map" },
             { href: "history-of-computer-systems-and-computer-generations/quiz", text: "MCQs" },
             { href: "history-of-computer-systems-and-computer-generations/brief-questions", text: "Brief Questions" },
-            { href: "nfdsotes", text: "Detailed Questions" },
+            { href: "history-of-computer-systems-and-computer-generations/detailed-questions", text: "Detailed Questions" },
         ],
     },
     {
