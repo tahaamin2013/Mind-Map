@@ -11,9 +11,11 @@ const page = () => {
                 <h2 className="text-2xl font-semibold mb-4">Early Computing Devices</h2>
                 <div className="space-y-4">
                     <div className='flex flex-col sm:flex-row gap-4'>
-                        <Image src="/Abacus.png" className='rounded-xl' height={240} width={240} alt='Abacus' />
+                        <Image src="/Abacus.png" className='rounded-xl' height={270} width={270} alt='Abacus' />
                         <div className='flex flex-col'>
                             <h3 className="text-xl font-medium">Abacus</h3>
+                            <p className='max-w-[700px] mb-3'>The abacus is the earliest counting device. It is made with rods, stones, and beads Abacus is used for calculation.</p>
+                            <p className='max-w-[700px] mt-3 mb-3'>Husnain: The abacus was the earliest counting device. That was made using beads, stones on wires or bones. It's used for mathematical calculations.</p>
                             <ul className="list-disc  ml-6 space-y-2">
                                 <li>One of the earliest counting devices.</li>
                                 <li>Consists of beads or stones on rods or wires.</li>
@@ -24,6 +26,9 @@ const page = () => {
                     </div>
                     <div>
                         <h3 className="text-xl font-medium">Napier’s Bones</h3>
+                        <p className='max-w-[700px] mt-3 mb-3'>The Napier's Bones was made in the Scotland 17th century, and John Napier invented this device and used it for Multiplication and Division.</p>
+                        <p className='max-w-[700px] mt-3 mb-3'>John Napier invented Napier's Bones in Scotland 17th Century.
+                            It's only used for Multiplication and Division. Napier's Bones is the first decimal-calculating device.</p>
                         <ul className="list-disc ml-6 space-y-2">
                             <li>Developed by John Napier.</li>
                             <li>Manually operated calculating device using 9 separate strips (bones) marked with numerals.</li>
