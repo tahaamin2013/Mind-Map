@@ -1,4 +1,5 @@
 // pages/history.tsx
+import Image from 'next/image';
 import React from 'react';
 
 const page = () => {
@@ -9,14 +10,17 @@ const page = () => {
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Early Computing Devices</h2>
                 <div className="space-y-4">
-                    <div>
-                        <h3 className="text-xl font-medium">Abacus</h3>
-                        <ul className="list-disc ml-6 space-y-2">
-                            <li>One of the earliest counting devices.</li>
-                            <li>Consists of beads or stones on rods or wires.</li>
-                            <li>Used for arithmetic calculations by sliding beads to represent numerical values.</li>
-                            <li>Used in various cultures for centuries.</li>
-                        </ul>
+                    <div className='flex flex-col sm:flex-row gap-4'>
+                        <Image src="/Abacus.png" className='rounded-xl' height={240} width={240} alt='Abacus' />
+                        <div className='flex flex-col'>
+                            <h3 className="text-xl font-medium">Abacus</h3>
+                            <ul className="list-disc  ml-6 space-y-2">
+                                <li>One of the earliest counting devices.</li>
+                                <li>Consists of beads or stones on rods or wires.</li>
+                                <li>Used for arithmetic calculations by sliding beads to represent numerical values.</li>
+                                <li>Used in various cultures for centuries.</li>
+                            </ul>
+                        </div>
                     </div>
                     <div>
                         <h3 className="text-xl font-medium">Napier’s Bones</h3>
