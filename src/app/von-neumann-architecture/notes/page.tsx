@@ -99,11 +99,6 @@ graph TD
         Von Neumann Architecture is a fundamental model in computer science that describes the design and operation of most modern computers. Proposed by John von Neumann in 1945, this architecture outlines the structure and functioning of computer systems where data and instructions are stored in the same memory. It consists of several key components including the Central Processing Unit (CPU), memory unit, registers, Arithmetic and Logic Unit (ALU), Control Unit (CU), and Input/Output (I/O) Controller.
       </p>
 
-
-
-
-
-
       <div className="relative p-6 pt-2 my-3 h-[300px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
         <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
           <button
@@ -118,6 +113,7 @@ graph TD
           >
             Zoom Out
           </button>
+      
         </div>
         <div
           className="mermaid-container"
