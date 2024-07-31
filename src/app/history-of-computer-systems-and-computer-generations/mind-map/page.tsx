@@ -117,8 +117,8 @@ const HistoryTable = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Early Computing Devices
           </h2>
-          <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-            <div className="overflow-x-auto">
+          <div className="bg-white shadow-xl rounded-lg ">
+            <div className="">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -168,8 +168,8 @@ const HistoryTable = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Computer Generations
           </h2>
-          <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-            <div className="overflow-x-auto">
+          <div className="bg-white shadow-xl w-full rounded-lg ">
+            <div className="">
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
@@ -180,7 +180,7 @@ const HistoryTable = () => {
                       >
                         {header}
                       </th>
-                    ))}sdfs
+                    ))}
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">

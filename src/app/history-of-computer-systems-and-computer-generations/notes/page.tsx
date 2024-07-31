@@ -6,7 +6,7 @@ const page = () => {
     return (
         <div className="p-6 bg-white text-gray-900">
             <h1 className="text-3xl font-bold mb-6">Brief History of Computer Systems</h1>
-
+        
             <section className="mb-8">
                 <h2 className="text-2xl font-semibold mb-4">Early Computing Devices</h2>
                 <div className="space-y-4">

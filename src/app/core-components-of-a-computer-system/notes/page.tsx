@@ -3,6 +3,7 @@ import React from 'react'
 const Page = () => {
     return (
         <div className="p-6 bg-white text-gray-900">
+           
             <h1 className="text-3xl font-bold mb-6">1.3 Core Components of a Computer System</h1>
 
             <section className="mb-8">

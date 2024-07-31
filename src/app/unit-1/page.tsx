@@ -34,8 +34,8 @@ const data: Section[] = [
             { href: "understanding-systems-and-their-types/notes", text: "Notes" },
             { href: "understanding-systems-and-their-types/mind-map", text: "Mind Map" },
             { href: "understanding-systems-and-their-types/quiz", text: "MCQs" },
-            { href: "aaanotes", text: "Brief Questions" },
-            { href: "notesfdsfds", text: "Detailed Questions" },
+            { href: "understanding-systems-and-their-types/brief-questions", text: "Brief Questions" },
+            { href: "understanding-systems-and-their-types/detailed-questions", text: "Detailed Questions" },
         ],
     },
     {
@@ -43,10 +43,10 @@ const data: Section[] = [
         title: "1.3 Core Components of a Computer System",
         links: [
             { href: "core-components-of-a-computer-system/notes", text: "Notes" },
-            { href: "nfdsfdsafotes", text: "Mind Map" },
+            { href: "core-components-of-a-computer-system/mind-map", text: "Mind Map" },
             { href: "core-components-of-a-computer-system/quiz", text: "MCQs" },
-            { href: "nofadsfadsfates", text: "Brief Questions" },
-            { href: "nofdasfdstes", text: "Detailed Questions" },
+            { href: "core-components-of-a-computer-system/", text: "Brief Questions" },
+            { href: "core-components-of-a-computer-system/", text: "Detailed Questions" },
         ],
     },
     {
@@ -54,10 +54,10 @@ const data: Section[] = [
         title: "1.4 Von Neumann Architecture",
         links: [
             { href: "von-neumann-architecture/notes", text: "Notes" },
-            { href: "notes", text: "Mind Map" },
+            { href: "von-neumann-architecture/mind-map", text: "Mind Map" },
             { href: "von-neumann-architecture/quiz", text: "MCQs" },
-            { href: "notes", text: "Brief Questions" },
-            { href: "notes", text: "Detailed Questions" },
+            { href: "von-neumann-architecture/", text: "Brief Questions" },
+            { href: "von-neumann-architecture/", text: "Detailed Questions" },
         ],
     },
     {
@@ -65,10 +65,10 @@ const data: Section[] = [
         title: "1.5 Data Transmission within a computer system",
         links: [
             { href: "data-transmission-within-a-computer-system/notes", text: "Notes" },
-            { href: "notes", text: "Mind Map" },
+            { href: "data-transmission-within-a-computer-system", text: "Mind Map" },
             { href: "data-transmission-within-a-computer-system/quiz", text: "MCQs" },
-            { href: "notes", text: "Brief Questions" },
-            { href: "notes", text: "Detailed Questions" },
+            { href: "data-transmission-within-a-computer-system/", text: "Brief Questions" },
+            { href: "data-transmission-within-a-computer-system/", text: "Detailed Questions" },
         ],
     },
     {
@@ -76,10 +76,10 @@ const data: Section[] = [
         title: "1.6 Types and Hierarchy of Computer Memory",
         links: [
             { href: "types-and-hierarchy-of-computer-memory/notes", text: "Notes" },
-            { href: "notes", text: "Mind Map" },
+            { href: "types-and-hierarchy-of-computer-memory/", text: "Mind Map" },
             { href: "types-and-hierarchy-of-computer-memory/quiz", text: "MCQs" },
-            { href: "notes", text: "Brief Questions" },
-            { href: "notes", text: "Detailed Questions" },
+            { href: "types-and-hierarchy-of-computer-memory/", text: "Brief Questions" },
+            { href: "types-and-hierarchy-of-computer-memory/", text: "Detailed Questions" },
         ],
     },
     {
@@ -87,10 +87,10 @@ const data: Section[] = [
         title: "1.7 Software and Hardware Engineering",
         links: [
             { href: "software-and-hardware-engineering/notes", text: "Notes" },
-            { href: "notes", text: "Mind Map" },
+            { href: "software-and-hardware-engineering/", text: "Mind Map" },
             { href: "software-and-hardware-engineering/quiz", text: "MCQs" },
-            { href: "notes", text: "Brief Questions" },
-            { href: "notes", text: "Detailed Questions" },
+            { href: "software-and-hardware-engineering/", text: "Brief Questions" },
+            { href: "software-and-hardware-engineering/", text: "Detailed Questions" },
         ],
     },
     {
@@ -98,21 +98,21 @@ const data: Section[] = [
         title: "1.8 Computer Software Multiple",
         links: [
             { href: "computer-software-multiple/notes", text: "Notes" },
-            { href: "notes", text: "Mind Map" },
+            { href: "computer-software-multiple/", text: "Mind Map" },
             { href: "computer-software-multiple/quiz", text: "MCQs" },
-            { href: "notes", text: "Brief Questions" },
-            { href: "notes", text: "Detailed Questions" },
+            { href: "computer-software-multiple/", text: "Brief Questions" },
+            { href: "computer-software-multiple/", text: "Detailed Questions" },
         ],
     },
-     {
+    {
         id: "9",
-         title: "1.9 Data Communication",
+        title: "1.9 Data Communication",
         links: [
             { href: "data-communication/notes", text: "Notes" },
-            { href: "notes", text: "Mind Map" },
+            { href: "data-communication/", text: "Mind Map" },
             { href: "data-communication/quiz", text: "MCQs" },
-            { href: "notes", text: "Brief Questions" },
-            { href: "notes", text: "Detailed Questions" },
+            { href: "data-communication/", text: "Brief Questions" },
+            { href: "data-communication/", text: "Detailed Questions" },
         ],
     },
     {
