@@ -114,7 +114,7 @@ graph TD
                         <td className="border border-gray-300 p-2 align-top">Geological Systems</td>
                         <td className="border border-gray-300 p-2">
                             <ul className="list-disc list-inside">
-                                <li>Plate Tectonics: Movement of Earth's plates causing earthquakes and volcanic eruptions</li>
+                                <li>Plate Tectonics: Movement of Earth&apos;s plates causing earthquakes and volcanic eruptions</li>
                                 <li>Mountain Systems: Formed by tectonic plate collisions, e.g., Himalayas</li>
                             </ul>
                         </td>
