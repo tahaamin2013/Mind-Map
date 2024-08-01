@@ -20,62 +20,62 @@ const data: Section[] = [
         id: "1",
         title: "1S.1 Central Processing Unit (CPU)",
         links: [
-            { href: "central-processing-unit/notes", text: "Notes" },
-            { href: "central-processing-unit/mind-map", text: "Mind Map" },
-            { href: "central-processing-unit/quiz", text: "MCQs" },
-            { href: "central-processing-unit/brief-questions", text: "Brief Questions" },
-            { href: "nfdsotes", text: "Detailed Questions" },
+            { href: "/computers-components/central-processing-unit/notes", text: "Notes" },
+            { href: "/computers-components/central-processing-unit/mind-map", text: "Mind Map" },
+            { href: "/computers-components/central-processing-unit/quiz", text: "MCQs" },
+            { href: "/computers-components/central-processing-unit/brief-questions", text: "Brief Questions" },
+            { href: "/computers-components/nfdsotes", text: "Detailed Questions" },
         ],
     },
     {
         id: "2",
         title: "1S.2 Primary/Main memory (RAM, ROM) Secondary memory",
         links: [
-            { href: "memory/notes", text: "Notes" },
-            { href: "notfdses", text: "Mind Map" },
-            { href: "memory/quiz", text: "MCQs" },
-            { href: "memory/brief-questions", text: "Brief Questions" },
-            { href: "notesfdsfds", text: "Detailed Questions" },
+            { href: "/computers-components/memory/notes", text: "Notes" },
+            { href: "/computers-components/notfdses", text: "Mind Map" },
+            { href: "/computers-components/memory/quiz", text: "MCQs" },
+            { href: "/computers-components/memory/brief-questions", text: "Brief Questions" },
+            { href: "/computers-components/notesfdsfds", text: "Detailed Questions" },
         ],
     },
     {
         id: "3",
         title: "Input/output devices",
         links: [
-            { href: "input-output-devices/notes", text: "Notes" },
-            { href: "nfdsfdsafotes", text: "Mind Map" },
-            { href: "input-output-devices/quiz", text: "MCQs" },
-            { href: "input-output-devices/brief-questions", text: "Brief Questions" },
-            { href: "nofdasfdstes", text: "Detailed Questions" },
+            { href: "/computers-components/input-output-devices/notes", text: "Notes" },
+            { href: "/computers-components/nfdsfdsafotes", text: "Mind Map" },
+            { href: "/computers-components/input-output-devices/quiz", text: "MCQs" },
+            { href: "/computers-components/input-output-devices/brief-questions", text: "Brief Questions" },
+            { href: "/computers-components/nofdasfdstes", text: "Detailed Questions" },
         ],
     },
     {
         id: "4",
         title: "Ports: serial and parallel ports",
         links: [
-            { href: "ports/notes", text: "Notes" },
-            { href: "nfdsfdsafotes", text: "Mind Map" },
-            { href: "ports/quiz", text: "MCQs" },
-            { href: "ports/brief-questions", text: "Brief Questions" },
-            { href: "nofdasfdstes", text: "Detailed Questions" },
+            { href: "/computers-components/ports/notes", text: "Notes" },
+            { href: "/computers-components/nfdsfdsafotes", text: "Mind Map" },
+            { href: "/computers-components/ports/quiz", text: "MCQs" },
+            { href: "/computers-components/ports/brief-questions", text: "Brief Questions" },
+            { href: "/computers-components/nofdasfdstes", text: "Detailed Questions" },
         ],
     },
     {
         id: "5",
         title: "Motherboard",
         links: [
-            { href: "motherboard/notes", text: "Notes" },
-            { href: "nfdsfdsafotes", text: "Mind Map" },
-            { href: "motherboard/quiz", text: "MCQs" },
-            { href: "motherboard/brief-questions", text: "Brief Questions" },
-            { href: "nofdasfdstes", text: "Detailed Questions" },
+            { href: "/computers-components/motherboard/notes", text: "Notes" },
+            { href: "/computers-components/nfdsfdsafotes", text: "Mind Map" },
+            { href: "/computers-components/motherboard/quiz", text: "MCQs" },
+            { href: "/computers-components/motherboard/brief-questions", text: "Brief Questions" },
+            { href: "/computers-components/nofdasfdstes", text: "Detailed Questions" },
         ],
     },
 ];
 
 export default function page() {
     return (
-         <div className="p-3">
+        <div className="p-3">
             <h1 className="font-bold text-3xl">Unit 2S: Computer Components</h1>
             <div className="flex gap-6 flex-wrap mt-3">
                 {data.map((section) => (
@@ -93,13 +93,13 @@ export default function page() {
                 <div className="rounded-md flex flex-col gap-3 bg-white w-[400px] py-3 px-3 border shadow-xl">
                     <h1 className="font-bold text-lg">Computer Compoennts</h1>
                     <div className="flex flex-row gap-4 flex-wrap">
-                        <Link href='/mind-map-of-computer-components' className="bg-violet-900 w-fit q py-2 text-center px-4 text-white rounded-xl">
+                        <Link href='/mind-map-of-computers-components' className="bg-violet-900 w-fit q py-2 text-center px-4 text-white rounded-xl">
                             Mind Map
                         </Link>
                     </div>
                 </div>
             </div>
-           
+
         </div>
     );
 }

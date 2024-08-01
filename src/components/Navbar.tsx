@@ -13,8 +13,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <div className="fixed z-50 w-full flex flex-col items-center">
-
+        <div className="w-full flex flex-col items-center">
             <div className="bg-gradient-to-r from-purple-600 to-indigo-600 flex justify-between items-center text-white transition-all duration-200 shadow-xl px-5 lg:px-16  py-4 w-full">
                 <Link href="/" className="text-xl font-bold">
                     Computer S

@@ -9,59 +9,64 @@ const Page = () => {
     }, []);
 
     const diagramDefinition = `
-        graph TD
-            subgraph "Bus Architecture"
-                BA1[Data Bus] --> BA2[Address Bus]
-                BA2 --> BA3[Control Bus]
-                                                                                                                                                                                                    
-            subgraph "Data Paths"
-                DP1[Internal Address Bus] --> DP2[Internal Data Bus]
-                DP2 --> DP3[Internal Control Bus]
-            end
-            subgraph "Registers"
-                R1[Memory Address Register (MAR)] --> R2[Memory Data Register (MDR)]
-                R2 --> R3[Accumulator (AC)]
-                R3 --> R4[Program Counter (PC)]
-                R4 --> R5[Current Instruction Register (CIR)]
-            end
-            subgraph "Memory Hierarchy"
-                MH1[Cache Memory] --> MH2[RAM]
-                MH2 --> MH3[Secondary Storage]
-            end
-            subgraph "Instruction Cycle"
-                IC1[Fetching] --> IC2[Decoding]
-                IC2 --> IC3[Executing]
-                IC3 --> IC4[Storing]
-            end
-            subgraph "Pipeline Processing"
-                PP[Pipeline Stages]
-            end
-            subgraph "Interrupts and I/O"
-                IO[Interrupt Handling]
-            end
-            subgraph "Parallelism"
-                P1[Multi-core CPUs] --> P2[Distributed Systems]
-            end
-            
-            BA1 --> DP1
-            BA2 --> DP2
-            BA3 --> DP3
-            DP1 --> R1
-            DP2 --> R2
-            DP3 --> R3
-            R1 --> MH1
-            R2 --> MH2
-            R3 --> MH3
-            MH1 --> IC1
-            MH2 --> IC2
-            MH3 --> IC3
-            IC1 --> IC2
-            IC2 --> IC3
-            IC3 --> IC4
-            IC4 --> PP
-            PP --> IO
-            IO --> P1
-            IO --> P2
+  graph TD;
+        subgraph Bus Architecture
+          A1[Data Bus]
+          A2[Address Bus]
+          A3[Control Bus]
+        end
+        subgraph Data Paths
+          B1[Internal Address Bus]
+          B2[Internal Data Bus]
+          B3[Internal Control Bus]
+        end
+        subgraph Registers
+          C1[Memory Address Register (MAR)]
+          C2[Memory Data Register (MDR)]
+          C3[Accumulator (AC)]
+          C4[Program Counter (PC)]
+          C5[Current Instruction Register (CIR)]
+        end
+        subgraph Memory Hierarchy
+          D1[Cache Memory]
+          D2[RAM]
+          D3[Secondary Storage]
+        end
+        subgraph Instruction Cycle
+          E1[Fetching]
+          E2[Decoding]
+          E3[Executing]
+          E4[Storing]
+        end
+        subgraph Pipeline Processing
+          F[Pipeline Stages]
+        end
+        subgraph Interrupts and I/O
+          G[Interrupt Handling]
+        end
+        subgraph Parallelism
+          H1[Multi-core CPUs]
+          H2[Distributed Systems]
+        end
+
+        A1 --> B1
+        A1 --> B2
+        A1 --> B3
+        A2 --> C1
+        A2 --> C2
+        A3 --> D1
+        A3 --> D2
+        A3 --> D3
+        D1 --> E1
+        D2 --> E2
+        D3 --> E3
+        E1 --> E2
+        E2 --> E3
+        E3 --> E4
+        E4 --> F
+        F --> G
+        G --> H1
+        G --> H2
     `;
 
     return (
@@ -164,7 +169,7 @@ const Page = () => {
                                 </ul>
                             </td>
                             <td className="py-2 px-4 border-b">Simultaneous execution of multiple tasks to improve processing speed</td>
-                            <td className="py-2 px-4 border-b">Enhances processing power and efficiency</td>
+                            <td className="py-2 px-4 border-b">Enhances data transmission speed and overall system performance</td>
                         </tr>
                     </tbody>
                 </table>
