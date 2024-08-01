@@ -434,7 +434,7 @@ export const quiz = {
         "Herman Hollerith",
         "John Napier",
       ],
-      correctAnswer: "Charles Babbage",
+      correctAnswer: "Herman Hollerith",
     },
     {
       id: 42,

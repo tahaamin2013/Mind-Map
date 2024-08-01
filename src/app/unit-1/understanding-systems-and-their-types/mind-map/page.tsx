@@ -20,30 +20,59 @@ const Page = () => {
     const zoomOut2 = () => setZoomLevel2(prev => Math.max(prev - 0.1, 0.5));
     const diagramDefinition = `
 graph TD
-    A[Natural Systems]
-    A --> B[Ecosystems]
-    A --> C[Weather Systems]
-    A --> D[Geological Systems]
+    B1[Forest Ecosystems] --> B[Ecosystems]
+    B2[Aquatic Ecosystems] --> B
+    B3[Grassland Ecosystems] --> B
+    C1[Atmospheric interactions] --> C[Weather Systems]
+    D1[Plate Tectonics] --> D[Geological Systems]
+    D2[Mountain Systems] --> D
+    B --> A[Natural Systems]
+    C --> A
+    D --> A
     A --> E[Hydrological Systems]
     A --> F[Solar System]
     A --> G[Biological Systems]
-
-    B --> B1[Forest Ecosystems]
-    B --> B2[Aquatic Ecosystems]
-    B --> B3[Grassland Ecosystems]
-
-    C --> C1[Atmospheric interactions]
-
-    D --> D1[Plate Tectonics]
-    D --> D2[Mountain Systems]
-
     E --> E1[Water movement and distribution]
-
     F --> F1[Sun, planets, moons, asteroids, comets]
-
     G --> G1[Human Body]
     G --> G2[Coral Reef]
     G --> G3[Rainforest Canopy]
+
+Muhammad Husnain, 1 min
+graph TD
+    B1[Forest Ecosystems] --> B
+    B2[Aquatic Ecosystems] --> B
+    B3[Grassland Ecosystems] --> B
+    C1[Atmospheric interactions] --> C
+    D1[Plate Tectonics] --> D
+    D2[Mountain Systems] --> D
+    B[Ecosystems] --> S
+    C[Weather Systems] --> S
+    D[Geological Systems] --> S
+    S[Natural Systems]
+    S --> E[Hydrological Systems]
+    S --> F[Solar System]
+    S --> G[Biological Systems]
+    E --> E1[Water movement and distribution]
+    F --> F1[Sun, planets, moons, asteroids, comets]
+    G --> G1[Human Body]
+    G --> G2[Coral Reef]
+    G --> G3[Rainforest Canopy]
+
+    %% Styling
+    classDef top fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef bottom fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef main fill:#ffd,stroke:#333,stroke-width:4px;
+    classDef sub fill:#efe,stroke:#333,stroke-width:1px;
+    class B,C,D top;
+    class E,F,G bottom;
+    class S main;
+    class B1,B2,B3,C1,D1,D2,E1,F1,G1,G2,G3 sub;
+
+    %% Linkage styling
+    linkStyle 0,1,2,3,4,5,6,7,8 stroke:#f9f,stroke-width:2px;
+    linkStyle 9,10,11 stroke:#bbf,stroke-width:2px;
+
     `;
     const diagramDefinition2 = `
 graph TD
