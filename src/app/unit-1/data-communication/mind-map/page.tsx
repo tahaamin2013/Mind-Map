@@ -247,7 +247,7 @@ left side
                         </tr>
                     </tbody>
                 </table>
-
+<h1 className='text-xl fontbold '>Moon iss ki headin nahi pata</h1>
                 <table className="min-w-full bg-white border border-gray-300">
                     <thead className="bg-gray-100">
                         <tr>
