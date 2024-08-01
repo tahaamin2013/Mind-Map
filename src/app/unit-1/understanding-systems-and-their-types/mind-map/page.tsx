@@ -89,6 +89,7 @@ graph TD
 
     return (
         <div className="p-4">
+            <h2 className='text-xl mb-3 font-bold'>1.2 Understanding Systems and Their Types</h2>
             <table className="min-w-full border border-gray-300 mb-6">
                 <thead>
                     <tr className="bg-gray-100">
