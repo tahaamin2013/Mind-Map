@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
@@ -8,85 +9,149 @@ const Page = () => {
         mermaid.contentLoaded();
     }, []);
 
-    const diagramDefinition = `
-graph LR
-    A[Sender] -->|sends| B[Message]
-    B -->|travels through| C[Medium]
-    C -->|received by| D[Receiver]
-    E[Protocol] -->|governs| A
-    E -->|governs| B
-    E -->|governs| C
-    E -->|governs| D
+    const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .components {
+        BackgroundColor lightskyblue
+    }
+    .modes {
+        BackgroundColor lightgreen
+    }
+    .devices {
+        BackgroundColor lightpink
+    }
+    .architecture {
+        BackgroundColor lightsalmon
+    }
+    .networks {
+        BackgroundColor plum
+    }
+    .topologies {
+        BackgroundColor lightcoral
+    }
+    .osi {
+        BackgroundColor lightseagreen
+    }
+    .media {
+        BackgroundColor wheat
+    }
+    .protocols {
+        BackgroundColor lavender
+    }
+    .security {
+        BackgroundColor paleturquoise
+    }
+    .cloud {
+        BackgroundColor peachpuff
+    }
+    .iot {
+        BackgroundColor lightsteelblue
+    }
+}
+</style>
 
-    subgraph "Sender Examples"
-    F[Computer]
-    G[Workstation]
-    H[Cell phone]
-    I[Camera]
-    end
+* Data Communication
+** Network Components <<components>>
+*** Sender
+*** Message
+*** Medium
+*** Receiver
+*** Protocol
+left side
+** Communication Modes <<modes>>
+*** Simplex
+*** Half-Duplex
+*** Full-Duplex
+*** Asynchronous
+*** Synchronous
+** Communication Devices <<devices>>
+*** Hub
+*** Switch
+*** Router
+*** Gateway
+** Network Architecture <<architecture>>
+*** Client/Server
+*** Peer-to-Peer
+right side
+** Types of Networks <<networks>>
+*** LAN
+*** WAN
+*** MAN
+*** VPN
+*** Wireless Networks
+**** Wi-Fi
+**** Bluetooth
+**** Cellular
+**** Satellite
+left side
+** Network Topologies <<topologies>>
+*** Bus
+*** Star
+*** Ring
+*** Mesh
+*** Hybrid
+** OSI Model <<osi>>
+*** Data Link Layer
+*** Network Layer
+*** Transport Layer
+*** Session Layer
+*** Presentation Layer
+*** Application Layer
+right side
+** Transmission Media <<media>>
+*** Guided
+**** Twisted Pair
+**** Coaxial
+**** Fiber Optic
+*** Unguided
+**** Radio Waves
+**** Microwaves
+**** Infrared
+left side
+** Network Protocols <<protocols>>
+*** HTTP/HTTPS
+*** FTP
+*** SMTP
+*** POP3/IMAP
+*** DNS
+*** TCP/UDP
+*** IP
+** Network Security <<security>>
+*** Authentication
+*** Encryption
+*** Firewall
+*** IDPS
+*** VPN
+*** Access Control
+*** Antivirus
+right side
+** Cloud Computing <<cloud>>
+*** IaaS
+*** PaaS
+*** SaaS
+*** Deployment Models
+**** Public
+**** Private
+**** Hybrid
+**** Community
+left side
+** Internet of Things <<iot>>
+*** Devices and Sensors
+*** Connectivity
+*** Data Processing
+*** User Interface
+*** Applications
+**** Smart Home
+**** Healthcare
+**** Industrial IoT
+**** Agriculture
+**** Transportation
+**** Smart Cities
 
-    subgraph "Message Types"
-    J[Text]
-    K[Audio]
-    L[Video]
-    end
-
-    subgraph "Medium Types"
-    M[Wired]
-    N[Wireless]
-    end
-
-    subgraph "Wired Examples"
-    O[Telephone cable]
-    P[Coaxial cable]
-    Q[Fiber optics]
-    end
-
-    subgraph "Wireless Examples"
-    R[Bluetooth]
-    S[Wi-Fi]
-    T[Microwave]
-    U[Radio wave]
-    V[Satellite]
-    end
-
-    subgraph "Receiver Examples"
-    W[Computer]
-    X[Workstation]
-    Y[Telephone handset]
-    Z[Television set]
-    end
-
-    A --- F & G & H & I
-    B --- J & K & L
-    C --- M & N
-    M --- O & P & Q
-    N --- R & S & T & U & V
-    D --- W & X & Y & Z
-    `;
-
-    const diagramDefinition2 = `
-graph TD
-    A[Modes of Network Communication]
-    A --> B[Simplex]
-    A --> C[Half-Duplex]
-    A --> D[Full-Duplex]
-    A --> E[Asynchronous Transmission]
-    A --> F[Synchronous Transmission]
-
-    B --> G[One-way]
-    C --> H[Two-way, alternating]
-    D --> I[Two-way, simultaneous]
-    E --> J[Variable intervals]
-    F --> K[Fixed intervals]
-
-    style A fill:#f9f,stroke:#333,stroke-width:4px
-    style B fill:#bbf,stroke:#f66,stroke-width:2px
-    style C fill:#bbf,stroke:#f66,stroke-width:2px
-    style D fill:#bbf,stroke:#f66,stroke-width:2px
-    style E fill:#bfb,stroke:#f66,stroke-width:2px
-    style F fill:#bfb,stroke:#f66,stroke-width:2px
-    `;
+@endmindmap
+`;
     const [zoomLevel1, setZoomLevel1] = useState(1);
     const [zoomLevel2, setZoomLevel2] = useState(1);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -141,34 +206,9 @@ graph TD
                         </tr>
                     </tbody>
                 </table>
-                <div className="relative p-6 pt-2 my-3 h-[500px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                    <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                        <button
-                            onClick={zoomIn1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom In
-                        </button>
-                        <button
-                            onClick={zoomOut1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom Out
-                        </button>
 
-                    </div>
-                    <div
-                        className="mermaid-container"
-                        ref={mermaidContainerRef}
-                        style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
-                    >
-                        <div className="mermaid">
-                            {diagramDefinition}
-                        </div>
-                    </div>
-                </div>
                 <h1 className='text-xl font-bold mb-3'>Modes of Network Communication
-</h1>
+                </h1>
                 <table className="min-w-full bg-white border border-gray-300">
                     <thead className="bg-gray-100">
                         <tr>
@@ -187,13 +227,13 @@ graph TD
                             <td className="py-2 px-4 border-b">Half-Duplex</td>
                             <td className="py-2 px-4 border-b">Two-way communication, but not simultaneous; Parties take turns sending and receiving	</td>
                             <td className="py-2 px-4 border-b">Walkie-talkies
-</td>
+                            </td>
                         </tr>
                         <tr>
                             <td className="py-2 px-4 border-b">Full-Duplex	</td>
                             <td className="py-2 px-4 border-b">Two-way communication simultaneously; Both parties can send and receive at the same time	</td>
                             <td className="py-2 px-4 border-b">Telephone networks
-</td>
+                            </td>
                         </tr>
                         <tr>
                             <td className="py-2 px-4 border-b">Asynchronous Transmission</td>
@@ -207,32 +247,7 @@ graph TD
                         </tr>
                     </tbody>
                 </table>
-                <div className="relative p-6 pt-2 my-3 h-[200px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                    <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                        <button
-                            onClick={zoomIn1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom In
-                        </button>
-                        <button
-                            onClick={zoomOut1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom Out
-                        </button>
 
-                    </div>
-                    <div
-                        className="mermaid-container"
-                        ref={mermaidContainerRef}
-                        style={{ transform: `scale(${zoomLevel2})`, transformOrigin: 'top left' }}
-                    >
-                        <div className="mermaid">
-                            {diagramDefinition2}
-                        </div>
-                    </div>
-                </div>
                 <table className="min-w-full bg-white border border-gray-300">
                     <thead className="bg-gray-100">
                         <tr>
@@ -273,6 +288,7 @@ graph TD
                 </table>
 
             </div>
+            <PlantUMLDiagram code={umlCode} />
 
         </div>
     );

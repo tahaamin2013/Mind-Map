@@ -1,54 +1,65 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
         mermaid.initialize({ startOnLoad: true });
         mermaid.contentLoaded();
     }, []);
-
-    const diagramDefinition = `
-graph TD
-    A[Engineering in Computing]
-    A --> B[Software Engineering]
-    A --> C[Hardware Engineering]
-
-    B --> B1[Application Software Engineering]
-    B --> B2[System Software Engineering]
-    B --> B3[Embedded Software Engineering]
-    B --> B4[Enterprise Software Engineering]
-    B --> B5[Game Development]
-
-    B1 --> B1a[Web applications]
-    B1 --> B1b[Mobile apps]
-    B1 --> B1c[Desktop software]
-
-    B2 --> B2a[Operating systems]
-    B2 --> B2b[Compilers]
-    B2 --> B2c[Device drivers]
-
-    B3 --> B3a[Automotive Embedded Systems]
-    B3 --> B3b[Digital home appliances]
-    B3 --> B3c[Industrial control systems]
-
-    C --> C1[Digital Hardware Engineering]
-    C --> C2[Integrated Circuit Design]
-    C --> C3[Computer Architecture]
-    C --> C4[Embedded Systems Design]
-
-    C1 --> C1a[Processors]
-    C1 --> C1b[Memory units]
-
-    C2 --> C2a[CPUs]
-    C2 --> C2b[GPUs]
-
-    C3 --> C3a[CPU architecture]
-    C3 --> C3b[Memory hierarchy]
-
-    C4 --> C4a[Microcontrollers]
-    C4 --> C4b[Sensors]
-    `;
+    const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .software {
+        BackgroundColor lightskyblue
+    }
+    .hardware {
+        BackgroundColor lightgreen
+    }
+}
+</style>
+* Engineering
+right side
+** Software Engineering <<software>>
+*** Application Software Engineering
+**** Web applications
+**** Mobile apps
+**** Desktop software
+*** System Software Engineering
+**** Operating systems
+**** Compilers
+**** Device drivers
+*** Embedded Software Engineering
+**** Automotive Embedded Systems
+**** Digital home appliances
+**** Industrial control systems
+*** Enterprise Software Engineering
+**** Process automation
+**** Data management
+**** Organizational communication
+*** Game Development
+**** Game engines
+**** Graphics
+**** Audio
+**** Animation
+left side
+** Hardware Engineering <<hardware>>
+*** Digital Hardware Engineering
+**** Processors
+**** Memory units
+*** Integrated Circuit (IC) Design
+**** CPUs
+**** GPUs
+*** Computer Architecture
+**** CPU architecture
+**** Memory hierarchy
+*** Embedded Systems Design
+**** Microcontrollers
+**** Sensors
+@endmindmap
+`;
     const [zoomLevel1, setZoomLevel1] = useState(1);
     const [zoomLevel2, setZoomLevel2] = useState(1);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -131,32 +142,8 @@ graph TD
                         </tr>
                     </tbody>
                 </table>
-                <div className="relative p-6 pt-2 my-3 h-[200px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                    <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                        <button
-                            onClick={zoomIn1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom In
-                        </button>
-                        <button
-                            onClick={zoomOut1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom Out
-                        </button>
+                <PlantUMLDiagram code={umlCode} />
 
-                    </div>
-                    <div
-                        className="mermaid-container"
-                        ref={mermaidContainerRef}
-                        style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
-                    >
-                        <div className="mermaid">
-                            {diagramDefinition}
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>

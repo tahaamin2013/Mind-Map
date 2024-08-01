@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
@@ -8,44 +9,77 @@ const Page = () => {
         mermaid.contentLoaded();
     }, []);
 
-    const diagramDefinition = `
-  graph TD
-    A[Computer System]
-    A --> B[Bus Architecture]
-    A --> C[Data Paths]
-    A --> D[Registers]
-    A --> E[Memory Hierarchy]
-    A --> F[Instruction Cycle]
-    A --> G[Pipeline Processing]
-    A --> H[Interrupts and I/O]
-    A --> I[Parallelism]
-
-    B --> B1[Data Bus]
-    B --> B2[Address Bus]
-    B --> B3[Control Bus]
-
-    C --> C1[Internal Address Bus]
-    C --> C2[Internal Data Bus]
-    C --> C3[Internal Control Bus]
-
-    D --> D1[Memory Address Register]
-    D --> D2[Memory Data Register]
-    D --> D3[Accumulator]
-    D --> D4[Program Counter]
-    D --> D5[Current Instruction Register]
-
-    E --> E1[Cache Memory]
-    E --> E2[RAM]
-    E --> E3[Secondary Storage]
-
-    F --> F1[Fetching]
-    F --> F2[Decoding]
-    F --> F3[Executing]
-    F --> F4[Storing]
-
-    I --> I1[Multi-core CPUs]
-    I --> I2[Distributed Systems]
-    `;
+    const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .bus {
+        BackgroundColor lightblue
+    }
+    .paths {
+        BackgroundColor lightgreen
+    }
+    .registers {
+        BackgroundColor pink
+    }
+    .memory {
+        BackgroundColor lightyellow
+    }
+    .cycle {
+        BackgroundColor lightcoral
+    }
+    .pipeline {
+        BackgroundColor lightskyblue
+    }
+    .interrupts {
+        BackgroundColor plum
+    }
+    .parallelism {
+        BackgroundColor lightseagreen
+    }
+}
+</style>
+* Data Transmission in Computer Systems
+** Bus Architecture <<bus>>
+*** System Buses
+**** Control Bus
+**** Data Bus
+**** Address Bus
+*** Microprocessor Bus Architecture
+**** Internal Address Bus
+**** Internal Data Bus
+**** Internal Control Bus
+left side
+** Data Paths <<paths>>
+*** Internal CPU pathways
+*** Connect ALU, registers, and cache
+** Registers <<registers>>
+*** Memory Address Register (MAR)
+*** Memory Data Register (MDR)
+*** Accumulator (AC)
+*** Program Counter (PC)
+*** Current Instruction Register (CIR)
+right side
+** Memory Hierarchy <<memory>>
+*** Cache Memory
+*** RAM
+*** Secondary Storage
+** Instruction Cycle <<cycle>>
+*** Fetching
+*** Decoding
+*** Executing
+*** Storing
+** Pipeline Processing <<pipeline>>
+*** Multiple instructions
+*** Simultaneous processing
+** Interrupts and I/O <<interrupts>>
+*** Signal handling
+*** I/O management
+** Parallelism <<parallelism>>
+*** Multi-core CPUs
+*** Distributed Systems
+@endmindmap
+`;
     const [zoomLevel1, setZoomLevel1] = useState(1);
     const [zoomLevel2, setZoomLevel2] = useState(1);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -167,32 +201,7 @@ const Page = () => {
                         </tr>
                     </tbody>
                 </table>
-                <div className="relative p-6 pt-2 my-3 h-[200px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                    <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                        <button
-                            onClick={zoomIn1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom In
-                        </button>
-                        <button
-                            onClick={zoomOut1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom Out
-                        </button>
-
-                    </div>
-                    <div
-                        className="mermaid-container"
-                        ref={mermaidContainerRef}
-                        style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
-                    >
-                        <div className="mermaid">
-                            {diagramDefinition}
-                        </div>
-                    </div>
-                </div>
+                <PlantUMLDiagram code={umlCode} />
             </div>
 
         </div>

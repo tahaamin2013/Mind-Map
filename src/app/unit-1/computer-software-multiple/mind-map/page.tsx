@@ -1,71 +1,87 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
         mermaid.initialize({ startOnLoad: true });
         mermaid.contentLoaded();
     }, []);
-
-    const diagramDefinition = `
-graph TD
-    A[Computer Software]
-    A --> B[System Software]
-    A --> C[Application Software]
-    A --> D[Programming Languages]
-
-    B --> B1[Operating System OS]
-    B --> B2[Device Drivers]
-    B --> B3[Utilities]
-    B --> B4[Compiler and Assembler]
-    B --> B5[Linkers and Loaders]
-    B --> B6[Firmware]
-
-    B1 --> B1a[Windows]
-    B1 --> B1b[macOS]
-    B1 --> B1c[Linux]
-    B1 --> B1d[Android]
-
-    C --> C1[Productivity Software]
-    C --> C2[Business Software]
-    C --> C3[Entertainment Software]
-    C --> C4[Educational Software]
-
-    C1 --> C1a[Microsoft Office]
-    C1 --> C1b[Google Workspace]
-    C1 --> C1c[LibreOffice]
-
-    C2 --> C2a[QuickBooks]
-    C2 --> C2b[Salesforce]
-    C2 --> C2c[Trello]
-
-    C3 --> C3a[Minecraft]
-    C3 --> C3b[Spotify]
-    C3 --> C3c[Netflix]
-
-    C4 --> C4a[LMS]
-    C4 --> C4b[Kahoot!]
-    C4 --> C4c[Duolingo]
-
-    D --> D1[Low Level Languages]
-    D --> D2[High Level Languages]
-
-    D1 --> D1a[Machine Language]
-    D1 --> D1b[Assembly Language]
-
-    D2 --> D2a[Procedural and Structured]
-    D2 --> D2b[Object-Oriented]
-
-    D2a --> D2a1[FORTRAN]
-    D2a --> D2a2[Pascal]
-    D2a --> D2a3[C]
-    D2a --> D2a4[ALGOL]
-
-    D2b --> D2b1[C++]
-    D2b --> D2b2[Java]
-    D2b --> D2b3[Visual Basic]
-    `;
+    const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .software {
+        BackgroundColor lightskyblue
+    }
+    .system {
+        BackgroundColor lightgreen
+    }
+    .application {
+        BackgroundColor lightpink
+    }
+    .languages {
+        BackgroundColor lightsalmon
+    }
+    .uses {
+        BackgroundColor plum
+    }
+}
+</style>
+* Computer Software
+** System Software <<system>>
+*** Operating System (OS)
+**** Resource management
+**** User interface
+**** File organization
+**** Security
+*** Device Drivers
+*** Utilities
+*** Compiler and Assembler
+*** Linkers and Loaders
+*** Firmware
+left side
+** Application Software <<application>>
+*** Productivity Software
+**** Microsoft Office
+**** Google Workspace
+**** LibreOffice
+*** Business Software
+**** QuickBooks
+**** Salesforce
+**** Trello
+*** Entertainment Software
+**** Games
+**** Multimedia players
+**** Streaming services
+*** Educational Software
+**** Learning Management Systems
+**** Interactive learning apps
+** Programming Languages <<languages>>
+*** Low Level Languages
+**** Machine Language
+**** Assembly Language
+*** High Level Languages
+**** Procedural and Structured
+***** FORTRAN, Pascal, C
+**** Object-Oriented
+***** C++, Java, Visual Basic
+right side
+** Uses of Programming Languages <<uses>>
+*** Low-Level Languages
+**** OS Development
+**** Device Drivers
+**** Embedded Systems
+**** Firmware Development
+*** High-Level Languages
+**** Applications Development
+**** Web Development
+**** Data Analysis
+**** Machine Learning and AI
+**** Automation and Scripting
+@endmindmap
+`;
     const [zoomLevel1, setZoomLevel1] = useState(1);
     const [zoomLevel2, setZoomLevel2] = useState(1);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -164,32 +180,7 @@ graph TD
                         </tr>
                     </tbody>
                 </table>
-                <div className="relative p-6 pt-2 my-3 h-[200px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                    <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                        <button
-                            onClick={zoomIn1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom In
-                        </button>
-                        <button
-                            onClick={zoomOut1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom Out
-                        </button>
-
-                    </div>
-                    <div
-                        className="mermaid-container"
-                        ref={mermaidContainerRef}
-                        style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
-                    >
-                        <div className="mermaid">
-                            {diagramDefinition}
-                        </div>
-                    </div>
-                </div>
+                <PlantUMLDiagram code={umlCode} />
             </div>
 
         </div>

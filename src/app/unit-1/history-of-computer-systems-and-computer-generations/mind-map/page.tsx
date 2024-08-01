@@ -249,7 +249,6 @@ mindmapDiagram {
           <div className="mt-8">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Timeline of Early Computing Devices</h3>
             <PlantUMLDiagram code={umlCode} />
-
           </div>
         </section>
 

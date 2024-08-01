@@ -1,59 +1,69 @@
 "use client";
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
         mermaid.initialize({ startOnLoad: true });
         mermaid.contentLoaded();
     }, []);
-
-    const diagramDefinition = `
-graph TD
-    A[Computer Memory]
-    A --> B[Memory Terminology]
-    A --> C[Memory Built-up and Retention Power]
-    A --> D[Main Memory]
-    A --> E[Volatile and Non-Volatile Memory]
-
-    B --> B1[Bit]
-    B --> B2[Byte]
-    B --> B3[Memory Word]
-    B --> B4[Word Size]
-
-    C --> C1[Chip Memory]
-    C --> C2[Magnetic Memory]
-    C --> C3[Optical Memory]
-
-    C1 --> C1a[RAM]
-    C1 --> C1b[ROM]
-    C1 --> C1c[Cache Memory]
-    C1 --> C1d[Flash Memory]
-    C1 --> C1e[Memory Cards]
-    C1 --> C1f[SSDs]
-
-    C2 --> C2a[Magnetic Tapes]
-    C2 --> C2b[Magnetic Disks]
-
-    C3 --> C3a[CDs]
-    C3 --> C3b[DVDs]
-    C3 --> C3c[Blu-ray Discs]
-
-    D --> D1[RAM]
-    D --> D2[Cache Memory]
-    D --> D3[ROM]
-
-    E --> E1[Volatile Memory]
-    E --> E2[Non-Volatile Memory]
-
-    E1 --> E1a[RAM]
-    E1 --> E1b[Cache Memory]
-
-    E2 --> E2a[ROM]
-    E2 --> E2b[Flash Memory]
-    E2 --> E2c[Magnetic Storage]
-    E2 --> E2d[Optical Storage]
-    `;
+    const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .terminology {
+        BackgroundColor lightskyblue
+    }
+    .buildup {
+        BackgroundColor lightgreen
+    }
+    .main {
+        BackgroundColor lightpink
+    }
+    .volatile {
+        BackgroundColor lightsalmon
+    }
+}
+</style>
+* Computer Memory
+** Memory Terminology <<terminology>>
+*** Bit
+*** Byte
+**** KB, MB, GB, TB, PB, EB
+*** Memory Word
+*** Word Size
+** Memory Built-up and Retention Power <<buildup>>
+*** Chip Memory
+**** RAM
+**** ROM
+**** Cache Memory
+**** Flash Memory Drives
+**** Memory Cards
+**** SSDs
+*** Magnetic Memory
+**** Magnetic Tapes
+**** Magnetic Disks (HDDs)
+*** Optical Memory
+**** CDs
+**** DVDs
+**** Blu-ray Discs
+left side
+** Main Memory <<main>>
+*** RAM
+*** Cache Memory
+*** ROM
+** Volatile and Non-Volatile Memory <<volatile>>
+*** Volatile Memory
+**** RAM
+**** Cache Memory
+*** Non-Volatile Memory
+**** ROM
+**** Flash Memory
+**** Magnetic Storage
+**** Optical Storage
+@endmindmap
+`;
     const [zoomLevel1, setZoomLevel1] = useState(1);
     const [zoomLevel2, setZoomLevel2] = useState(1);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -140,32 +150,8 @@ graph TD
                         </tr>
                     </tbody>
                 </table>
-                <div className="relative p-6 pt-2 my-3 h-[200px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                    <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                        <button
-                            onClick={zoomIn1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom In
-                        </button>
-                        <button
-                            onClick={zoomOut1}
-                            className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                        >
-                            Zoom Out
-                        </button>
+                <PlantUMLDiagram code={umlCode} />
 
-                    </div>
-                    <div
-                        className="mermaid-container"
-                        ref={mermaidContainerRef}
-                        style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
-                    >
-                        <div className="mermaid">
-                            {diagramDefinition}
-                        </div>
-                    </div>
-                </div>
             </div>
 
         </div>
