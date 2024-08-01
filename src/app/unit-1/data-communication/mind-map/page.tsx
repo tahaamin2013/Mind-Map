@@ -110,6 +110,7 @@ graph TD
     return (
         <div>
             <div className="container mx-auto p-4">
+                <h1 className='text-xl mb-3 font-bold'>Network Communication Components</h1>
                 <table className="min-w-full bg-white border border-gray-300">
                     <thead className="bg-gray-100">
                         <tr>
@@ -166,6 +167,8 @@ graph TD
                         </div>
                     </div>
                 </div>
+                <h1 className='text-xl font-bold mb-3'>Modes of Network Communication
+</h1>
                 <table className="min-w-full bg-white border border-gray-300">
                     <thead className="bg-gray-100">
                         <tr>
