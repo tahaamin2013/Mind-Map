@@ -145,7 +145,7 @@ const Page = () => {
                                     <li>Storing</li>
                                 </ul>
                             </td>
-                            <td className="py-2 px-4 border-b">Process of executing a program's instructions</td>
+                            <td className="py-2 px-4 border-b">Process of executing a program&apos;s instructions</td>
                             <td className="py-2 px-4 border-b">Fetches, decodes, executes, and stores instructions</td>
                         </tr>
                         <tr>
