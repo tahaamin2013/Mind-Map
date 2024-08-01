@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
@@ -17,59 +18,81 @@ const Page = () => {
     const zoomIn2 = () => setZoomLevel2(prev => Math.min(prev + 0.1, 2));
     const zoomOut2 = () => setZoomLevel2(prev => Math.max(prev - 0.1, 0.5));
 
-    const diagramDefinition = `
- graph TD
-    A[Core Components of a Computer System]
-    A --> B[Input Devices]
-    A --> C[System Unit]
-    A --> D[Storage Devices]
-    A --> E[Output Devices]
-    A --> F[Ports, Expansion Slots, and Cards]
-
-    B --> B1[Keyboard]
-    B --> B2[Mouse]
-    B --> B3[Microphone]
-    B --> B4[Scanner]
-    B --> B5[Barcode Reader]
-    B --> B6[Digital Camera]
-    B --> B7[Touch Screen]
-
-    C --> C1[Motherboard]
-    C --> C2[CPU]
-    C2 --> C2a[Control Unit]
-    C2 --> C2b[ALU]
-    C2 --> C2c[Registers]
-    C --> C3[Expansion Slots]
-    C --> C4[RAM Slots]
-    C --> C5[CPU Socket]
-    C --> C6[Ports]
-
-    D --> D1[Hard Disk]
-    D --> D2[CD]
-    D --> D3[DVD]
-    D --> D4[Memory Card]
-    D --> D5[USB Flash Drive]
-
-    E --> E1[Monitor]
-    E1 --> E1a[CRT]
-    E1 --> E1b[LED]
-    E --> E2[Printer]
-    E2 --> E2a[Impact]
-    E2 --> E2b[Non-Impact]
-    E --> E3[Plotter]
-    E --> E4[Speaker]
-
-    F --> F1[Ports]
-    F1 --> F1a[USB]
-    F1 --> F1b[HDMI]
-    F1 --> F1c[DVI]
-    F1 --> F1d[Audio]
-    F1 --> F1e[LAN]
-    F --> F2[Expansion Cards]
-    F2 --> F2a[Sound Card]
-    F2 --> F2b[Graphics Card]
-    F2 --> F2c[Modem Card]
-    F2 --> F2d[Network Card] `
+    const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor lightGreen
+  }
+  :depth(1) {
+    BackgroundColor lightBlue
+  }
+  :depth(2) {
+    BackgroundColor lightYellow
+  }
+  :depth(3) {
+    BackgroundColor lightPink
+  }
+  :depth(4) {
+    BackgroundColor lightGray
+  }
+}
+</style>
+*[#Orange] Core Components of a Computer System
+**[#87CEFA] Input Devices
+***[#FFFACD] Keyboard
+***[#FFFACD] Mouse
+***[#FFFACD] Microphone
+***[#FFFACD] Scanner
+***[#FFFACD] Barcode Reader
+***[#FFFACD] Digital Camera
+***[#FFFACD] Touch Screen
+**[#87CEFA] System Unit
+***[#FFFACD] Motherboard
+****[#FFB6C1] Microprocessor (CPU)
+*****[#D3D3D3] Control Unit (CU)
+*****[#D3D3D3] Arithmetic Logic Unit (ALU)
+*****[#D3D3D3] Registers
+****[#FFB6C1] Expansion Slots
+****[#FFB6C1] RAM Memory Slots
+****[#FFB6C1] Socket for Microprocessor
+****[#FFB6C1] Ports
+**[#87CEFA] Storage Devices
+***[#FFFACD] Hard Disk
+***[#FFFACD] Compact Disk (CD)
+***[#FFFACD] Digital Versatile Disk (DVD)
+***[#FFFACD] Memory Card
+***[#FFFACD] USB Flash Drive
+--[#87CEFA] Output Devices
+---[#FFFACD] Monitor
+----[#FFB6C1] CRT Monitor
+----[#FFB6C1] LED Monitor
+---[#FFFACD] Printer
+----[#FFB6C1] Impact Printer
+----[#FFB6C1] Non-Impact Printer
+---[#FFFACD] Plotter
+---[#FFFACD] Speaker
+--[#87CEFA] Ports, Expansion Slots, and Expansion Cards
+---[#FFFACD] Ports
+----[#FFB6C1] USB
+----[#FFB6C1] HDMI
+----[#FFB6C1] DVI
+----[#FFB6C1] Audio
+----[#FFB6C1] LAN
+---[#FFFACD] Expansion Slots and Expansion Cards
+----[#FFB6C1] Sound Card
+----[#FFB6C1] Graphics Card
+----[#FFB6C1] Modem Card
+----[#FFB6C1] Network Card
+@endmindmap
+`;
+    const markdownContent = `
+  # UML Diagram
+  \`\`\`plantuml
+  ${umlCode}
+  \`\`\`
+  `;
     return (
         <div className="p-6 bg-white text-gray-900">
             <h1 className="text-3xl font-bold mb-6">1.3 Core Components of a Computer System</h1>
@@ -112,31 +135,8 @@ const Page = () => {
                     </tbody>
                 </table>
             </div>
-            <div className="relative p-6 pt-2 my-3 h-[150px] sm:h-[300px] overflow-scroll flex flex-col border border-gray-300 rounded-lg shadow-md bg-white">
-                <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                    <button
-                        onClick={zoomIn2}
-                        className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                    >
-                        Zoom In
-                    </button>
-                    <button
-                        onClick={zoomOut2}
-                        className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                    >
-                        Zoom Out
-                    </button>
-                </div>
-                <div
-                    className="mermaid-container"
-                    ref={mermaidContainerRef2}
-                    style={{ transform: `scale(${zoomLevel2})`, transformOrigin: 'top left' }}
-                >
-                    <div className="mermaid">
-                        {diagramDefinition}
-                    </div>
-                </div>
-            </div>
+            <PlantUMLDiagram code={umlCode} />
+
         </div>
     )
 }

@@ -1,28 +1,118 @@
 import React from "react";
 import MermaidDiagram from "@/components/mermaiddiagram";
+import PlantUMLDiagram from "@/components/PlantUMLDiagram";
 
 const HistoryTable = () => {
-  const earlyComputingDevicesChart = `
-  graph TD
-    A[Abacus] --> B[Napier's Bones]
-    B --> C[Pascaline]
-    C --> D[Stepped Reckoner]
-    D --> E[Difference Engine]
-    E --> F[Analytical Engine]
-    F --> G[Tabulating Machine]
-    G --> H[Differential Analyzer]
-    H --> I[Mark 1]
 
-    A -->|Early computing device| B
-    B -->|Decimal calculating| C
-    C -->|Mechanical calculator| D
-    D -->|Digital mechanical| E
-    E -->|Basic computations| F
-    F -->|Advanced computations| G
-    G -->|Punch card-based| H
-    H -->|Electrical computer| I
+  const umlCode = `
+@startmindmap
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor lightGreen
+  }
+  :depth(1) {
+    BackgroundColor lightBlue
+  }
+  :depth(2) {
+    BackgroundColor lightYellow
+  }
+}
+</style>
+*[#FFD700] Evolution of Computing Devices
+++[#FF6347] Ancient to 17th Century
++++[#FFA07A] Abacus
+++++_ Unknown origin, ancient times
+++++_ Beads on rods or wires
+++++_ Manual arithmetic calculations
+++++_ Earliest counting device
+++++_ Used in various cultures for centuries
++++[#FFA07A] Napier's Bones
+++++_ John Napier, Scotland, 17th century
+++++_ 9 separate strips (bones)
+++++_ Multiplication and division
+++++_ First decimal-calculating device
+++[#FF8C00] 17th to 19th Century
++++[#FFD700] Pascaline
+++++_ Blaise Pascal, France, 1642
+++++_ Wooden box with gears and wheels
+++++_ Automated arithmetic calculations
+++++_ First mechanical and automated calculator
+++++_ Motivated by Pascal's father's tax calculations
++++[#FFD700] Stepped Reckoner
+++++_ Wilhelm Leibniz, Germany, 1673
+++++_ Grooved wheels
+++++_ Improved arithmetic calculations
+++++_ Digital mechanical calculator
+++++_ Could do addition, subtraction, multiplication, and division
++++[#FFD700] Difference Engine
+++++_ Charles Babbage, England, 1820s
+++++_ Steam-powered mechanical computer
+++++_ Solving numerical problems
+++++_ Mechanical computer for basic computations
++++[#FFD700] Analytical Engine
+++++_ Charles Babbage, England, 1830
+++++_ Punch card input
+++++_ Advanced computations and data storage
+++++_ Could solve mathematical problems and store data
+--[#4682B4] Late 19th to Early 20th Century
+---[#87CEEB] Tabulating Machine
+----_ Herman Hollerith, USA, 1890
+----_ Punch card-based mechanical calculator
+----_ Computing statistics, census calculations
+----_ Led to the formation of IBM in 1924
+---[#87CEEB] Differential Analyzer
+----_ Vannevar Bush, USA, 1930
+----_ First electrical computer
+----_ Complex scientific computations
+----_ Could perform 25 calculations per minute
+--[#32CD32] Mid 20th Century
+---[#90EE90] Mark 1
+----_ Howard Aiken, USA, 1944
+----_ Digital computer
+----_ Fast arithmetic operations
+----_ Complex calculations
+----_ Could add three 8-digit numbers in one second
+----_ Massive size: 50 feet long, 8 feet high, 5 tons
+@endmindmap
+`;
+  const umlCode2 = `
+@startmindmap
+*[#FFD700] Computer Generations
+++[#FF6347] First Generation (1940-1956)
++++[#FFA07A] Vacuum tube technology
++++[#FFA07A] Slow processing speed
++++[#FFA07A] Limited memory capacity
++++[#FFA07A] Massive size
++++[#FFA07A] High cost and unreliability
+++[#FF8C00] Second Generation (1956-1963)
++++[#FFD700] Transition to transistors
++++[#FFD700] Enhanced efficiency
++++[#FFD700] Smaller size
++++[#FFD700] Improved speed and memory
+--[#4682B4] Third Generation (1963-1971)
+---[#87CEEB] Use of integrated circuits (ICs)
+---[#87CEEB] Enhanced speed and memory
+---[#87CEEB] Improved energy efficiency
+---[#87CEEB] Multiple application programs
+--[#32CD32] Fourth Generation (1971-Present)
+---[#90EE90] Microprocessor development
+---[#90EE90] Exceptional speed and storage
+---[#90EE90] Small size and high reliability
+---[#90EE90] Diverse software availability
+--[#9932CC] Fifth Generation
+---[#DDA0DD] Artificial Intelligence focus
+---[#DDA0DD] Advanced parallel processing
+---[#DDA0DD] Natural Language Processing
+---[#DDA0DD] Expert Systems
+@endmindmap
+`;
+  const markdownContent = `
+  # UML Diagram
+  \`\`\`plantuml
+  ${umlCode}
+  \`\`\`
   `;
-
   const computerGenerationsChart = `
   classDiagram
     class FirstGeneration {
@@ -158,9 +248,8 @@ const HistoryTable = () => {
           </div>
           <div className="mt-8">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Timeline of Early Computing Devices</h3>
-            <div className="bg-white shadow-lg rounded-lg p-6">
-              <MermaidDiagram chart={earlyComputingDevicesChart} />
-            </div>
+            <PlantUMLDiagram code={umlCode} />
+
           </div>
         </section>
 
@@ -212,9 +301,8 @@ const HistoryTable = () => {
           </div>
           <div className="mt-8">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">Computer Generations Overview</h3>
-            <div className="bg-white shadow-lg rounded-lg p-6">
-              <MermaidDiagram chart={computerGenerationsChart} />
-            </div>
+            <PlantUMLDiagram code={umlCode2} />
+
           </div>
         </section>
       </div>

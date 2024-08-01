@@ -1,13 +1,149 @@
 "use client"
 import React, { useEffect, useRef, useState } from 'react';
 import mermaid from 'mermaid';
+import PlantUMLDiagram from '@/components/PlantUMLDiagram';
 
 const Page = () => {
     useEffect(() => {
         mermaid.initialize({ startOnLoad: true });
         mermaid.contentLoaded();
     }, []);
+    const umlCode = `
+@startmindmap
+*[#Orange] Von Neumann Architecture
+left side
+**[#lightgreen] Central Processing Unit (CPU)
+***[#FFBBCC] Arithmetic and Logic Unit (ALU)
+***[#FFBBCC] Control Unit (CU)
+****[#lightblue] Instruction Decoder
+****[#lightblue] Timing and Control Logic
+****[#lightblue] Instruction Register
+***[#FFBBCC] Registers
+****[#lightblue] Memory Address Register (MAR)
+****[#lightblue] Memory Data Register (MDR)
+****[#lightblue] Accumulator (AC)
+****[#lightblue] Program Counter (PC)
+****[#lightblue] Current Instruction Register (CIR)
+***[#FFBBCC] L1 Cache
+***[#FFBBCC] L2 Cache
+right side
+**[#lightgreen] Buses
+***[#FFBBCC] Address Bus
+***[#FFBBCC] Data Bus
+***[#FFBBCC] Control Bus
+**[#lightgreen] Memory Unit
+***[#FFBBCC] RAM (Random Access Memory)
+***[#FFBBCC] Cache Memory
+**[#lightgreen] Input/Output (I/O) Controller
+@endmindmap
+`;
+    const umlCode3 = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .cpu {
+        BackgroundColor lightblue
+    }
+    .alu {
+        BackgroundColor lightgreen
+    }
+    .cu {
+        BackgroundColor pink
+    }
+    .buses {
+        BackgroundColor yellow
+    }
+    .memory {
+        BackgroundColor lightcoral
+    }
+    .io {
+        BackgroundColor lightskyblue
+    }
+}
+</style>
+* Von Neumann Architecture
+** Central Processing Unit (CPU) <<cpu>>
+*** ALU
+*** Control Unit
+*** Registers
+**** MAR
+**** MDR
+**** AC
+**** PC
+**** CIR
+*** L1 Cache
+*** L2 Cache
+left side
+** Arithmetic and Logic Unit (ALU) <<alu>>
+*** Addition
+*** Subtraction
+*** Multiplication
+*** Division
+*** Comparisons
+*** Bitwise operations
+** Control Unit (CU) <<cu>>
+*** Controls ALU
+*** Manages memory operations
+*** Coordinates I/O operations
+*** Provides timing and control signals
+right side
+** Buses <<buses>>
+*** Address Bus
+*** Data Bus
+*** Control Bus
+** Memory Unit <<memory>>
+*** RAM
+*** Cache Memory
+** Input/Output (I/O) Controller <<io>>
+*** Handles data transfers
+*** Command executions for peripherals
+@endmindmap
+`;
 
+
+    const umlCode2 = `
+@startmindmap
+<style>
+mindmapDiagram {
+    .control_unit {
+        BackgroundColor lightblue
+    }
+    .alu {
+        BackgroundColor lightgreen
+    }
+    .memory {
+        BackgroundColor pink
+    }
+    .io {
+        BackgroundColor lightyellow
+    }
+    .bus {
+        BackgroundColor lightgray
+    }
+}
+</style>
+* Von Neumann Architecture
+left side
+** Control Unit <<control_unit>>
+*** Instruction Register
+*** Program Counter
+*** Control Circuits
+** Arithmetic Logic Unit (ALU) <<alu>>
+*** Arithmetic Operations
+*** Logical Operations
+right side
+** Memory <<memory>>
+*** RAM
+*** ROM
+** Input/Output <<io>>
+*** Input Devices
+*** Output Devices
+** Bus System <<bus>>
+*** Data Bus
+*** Address Bus
+*** Control Bus
+@endmindmap
+`;
     const [zoomLevel1, setZoomLevel1] = useState(1);
     const [zoomLevel2, setZoomLevel2] = useState(1);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -104,32 +240,10 @@ graph TD
                 </table>
             </div>
 
-            <div className="relative p-6 pt-2 my-3 h-[300px] overflow-scroll flex flex-col  border border-gray-300 rounded-lg shadow-md bg-white">
-                <div className="bg-white top-2 items-end justify-end right-2 flex space-x-2">
-                    <button
-                        onClick={zoomIn1}
-                        className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                    >
-                        Zoom In
-                    </button>
-                    <button
-                        onClick={zoomOut1}
-                        className="px-3 py-1 text-white bg-gradient-to-r from-purple-600 to-indigo-600"
-                    >
-                        Zoom Out
-                    </button>
+            <PlantUMLDiagram code={umlCode} />
+            <PlantUMLDiagram code={umlCode2} />
+            <PlantUMLDiagram code={umlCode3} />
 
-                </div>
-                <div
-                    className="mermaid-container"
-                    ref={mermaidContainerRef}
-                    style={{ transform: `scale(${zoomLevel1})`, transformOrigin: 'top left' }}
-                >
-                    <div className="mermaid">
-                        {diagramDefinition}
-                    </div>
-                </div>
-            </div>
         </div>
     )
 }
