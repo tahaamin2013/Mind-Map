@@ -20,26 +20,6 @@ const Page = () => {
     const zoomOut2 = () => setZoomLevel2(prev => Math.max(prev - 0.1, 0.5));
     const diagramDefinition = `
 graph TD
-    B1[Forest Ecosystems] --> B[Ecosystems]
-    B2[Aquatic Ecosystems] --> B
-    B3[Grassland Ecosystems] --> B
-    C1[Atmospheric interactions] --> C[Weather Systems]
-    D1[Plate Tectonics] --> D[Geological Systems]
-    D2[Mountain Systems] --> D
-    B --> A[Natural Systems]
-    C --> A
-    D --> A
-    A --> E[Hydrological Systems]
-    A --> F[Solar System]
-    A --> G[Biological Systems]
-    E --> E1[Water movement and distribution]
-    F --> F1[Sun, planets, moons, asteroids, comets]
-    G --> G1[Human Body]
-    G --> G2[Coral Reef]
-    G --> G3[Rainforest Canopy]
-
-Muhammad Husnain, 1 min
-graph TD
     B1[Forest Ecosystems] --> B
     B2[Aquatic Ecosystems] --> B
     B3[Grassland Ecosystems] --> B
