@@ -16,15 +16,13 @@ const Navbar = () => {
         <div className="w-full flex flex-col items-center">
             <div className="bg-gradient-to-r from-purple-600 to-indigo-600 flex justify-between items-center text-white transition-all duration-200 shadow-xl px-5 lg:px-16  py-4 w-full">
                 <Link href="/" className="text-xl font-bold">
-                    Computer S
+                    SSC Study Hub
                 </Link>
                 <div className=" flex justify-end">
                     <div className="md:flex hidden text-white font-bold gap-5 text-lg">
                         <Link href="/" id="Our Services">Home</Link>
                         <Link href="/" id="#MemberShips">Units</Link>
-                        <Link href="/" id="Meet the Team">Meet The Team</Link>
-                        <Link href="/" id="FAQ">FAQ</Link>
-                        <Link href="/" id="Contact">Contact us</Link>
+                        <Link href="/" id="unit-1/content">Lists of units</Link>
                     </div>
                     <div className="md:hidden block z-50">
                         <Sheet>
@@ -36,20 +34,15 @@ const Navbar = () => {
                             </SheetTrigger>
                             <SheetContent className="flex-col flex gap-3 text-left items-start font-bold">
                                 <SheetClose>
-                                    <div id="Our Services">Our Services</div>
+                                    <Link href="/" id="Our Services">Home</Link>
                                 </SheetClose>
                                 <SheetClose>
-                                    <div id="#MemberShips">Save Here</div>
+                                    <Link href="/" id="#MemberShips">Units</Link>
                                 </SheetClose>
                                 <SheetClose>
-                                    <div id="Meet the Team - mobile">Meet The Team</div>
+                                    <Link href="/" id="unit-1/content">Lists of units</Link>
                                 </SheetClose>
-                                <SheetClose>
-                                    <div id="FAQ">FAQ</div>
-                                </SheetClose>
-                                <SheetClose>
-                                    <div id="Contact">Contact us</div>
-                                </SheetClose>
+                           
                             </SheetContent>
                         </Sheet>
                     </div>
